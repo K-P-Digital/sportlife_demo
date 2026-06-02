@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Sportlife - Antrenman</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#bfb2da",
+                        "surface-container-low": "#1d1b20",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "surface-container-highest": "#36343a",
+                        "primary": "#cfbcff",
+                        "tertiary-container": "#c9a74d",
+                        "outline-variant": "#494551",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-tint": "#cfbcff",
+                        "background": "#141218",
+                        "surface-variant": "#36343a",
+                        "surface-container-lowest": "#0f0d13",
+                        "on-secondary-fixed": "#1f1635",
+                        "inverse-surface": "#e6e0e9",
+                        "on-tertiary-container": "#503d00",
+                        "inverse-on-surface": "#322f35",
+                        "outline": "#948e9c",
+                        "on-primary": "#381e72",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#6750a4",
+                        "surface-container-high": "#2b292f",
+                        "surface-bright": "#3b383e",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "surface-dim": "#141218",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "tertiary": "#e7c365",
+                        "surface-container": "#211f24",
+                        "on-primary-fixed": "#22005d",
+                        "secondary-container": "#4d4465",
+                        "primary-container": "#6750a4",
+                        "surface": "#141218",
+                        "on-surface-variant": "#cbc4d2",
+                        "on-tertiary": "#3e2e00",
+                        "on-secondary": "#342b4b",
+                        "secondary": "#cdc0e9",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "primary-fixed": "#e9ddff",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#e0d2ff",
+                        "primary-fixed-dim": "#cfbcff",
+                        "on-background": "#e6e0e9",
+                        "tertiary-fixed": "#ffdf93",
+                        "secondary-fixed": "#e9ddff",
+                        "sport-accent": "#C5F833"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "display": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"],
+                        "inter": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#050505] text-on-surface font-body antialiased pb-28 selection:bg-sport-accent selection:text-[#050505] min-h-screen">
+<!-- HEADER -->
+<header class="flex justify-between items-center pt-[54px] px-5 pb-4 sticky top-0 bg-[#050505]/95 backdrop-blur-md z-40">
+<div class="flex flex-col">
+<h1 class="text-white text-[26px] font-bold tracking-[-0.5px] leading-tight">Antrenman</h1>
+<span class="text-[#8A8A8A] text-xs font-normal mt-1 font-inter">Nisan 2025</span>
+</div>
+<button class="w-10 h-10 bg-[#161616] rounded-full flex items-center justify-center border border-white/5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-white text-[18px]">calendar_month</span>
+</button>
+</header>
+<!-- PERIOD SELECTOR -->
+<div class="mt-5 px-5 overflow-x-auto hide-scrollbar">
+<div class="flex gap-2 min-w-max">
+<button class="h-9 px-[14px] bg-sport-accent text-[#0A0A0A] rounded-[18px] text-[13px] font-bold flex items-center justify-center font-inter">Bu Ay</button>
+<button class="h-9 px-[14px] bg-[#161616] text-[#8A8A8A] rounded-[18px] text-[13px] font-medium flex items-center justify-center font-inter border border-white/5">Son 3 Ay</button>
+<button class="h-9 px-[14px] bg-[#161616] text-[#8A8A8A] rounded-[18px] text-[13px] font-medium flex items-center justify-center font-inter border border-white/5">Bu Yıl</button>
+<button class="h-9 px-[14px] bg-[#161616] text-[#8A8A8A] rounded-[18px] text-[13px] font-medium flex items-center justify-center font-inter border border-white/5">Tümü</button>
+</div>
+</div>
+<!-- HERO STATS CARD -->
+<div class="mt-6 px-5">
+<div class="bg-[#161616] border border-white/5 rounded-[20px] p-6 flex justify-between items-center relative overflow-hidden">
+<!-- Decorative gradient behind the big number -->
+<div class="absolute -left-10 -bottom-10 w-40 h-40 bg-sport-accent/5 rounded-full blur-2xl"></div>
+<div class="flex flex-col items-start z-10">
+<span class="font-inter font-extrabold text-[56px] text-sport-accent tracking-[-2px] leading-none">23</span>
+<span class="text-[#8A8A8A] text-[13px] font-normal mt-1 font-inter">aktivite</span>
+<div class="mt-2 bg-sport-accent/15 px-[10px] py-[3px] rounded-md">
+<span class="text-sport-accent text-[10px] font-bold font-inter">+5 geçen aydan</span>
+</div>
+</div>
+<div class="flex flex-col w-[140px] z-10 border-l border-white/5 pl-5">
+<div class="flex justify-between items-center py-2.5 border-b border-white/5">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Toplam süre</span>
+<span class="text-white text-[13px] font-semibold font-inter">18 saat</span>
+</div>
+<div class="flex justify-between items-center py-2.5 border-b border-white/5">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Kalori</span>
+<span class="text-white text-[13px] font-semibold font-inter">4.200 kcal</span>
+</div>
+<div class="flex justify-between items-center py-2.5">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Ort./hafta</span>
+<span class="text-sport-accent text-[13px] font-bold font-inter">5.7</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTIVITY CALENDAR CARD -->
+<div class="mt-4 px-5">
+<div class="bg-[#161616] border border-white/5 rounded-[20px] p-5">
+<div class="flex justify-between items-center">
+<span class="text-[#8A8A8A] text-[10px] font-semibold tracking-[0.1em] uppercase font-inter">NİSAN 2025</span>
+<div class="flex gap-2 text-[#B8B8B8]">
+<button class="w-7 h-7 flex items-center justify-center hover:text-white"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button>
+<button class="w-7 h-7 flex items-center justify-center hover:text-white"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+</div>
+</div>
+<div class="mt-4">
+<div class="grid grid-cols-7 gap-y-1 mb-2">
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Pt</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Sa</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Çr</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Pe</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Cu</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Ct</div>
+<div class="text-[#4A4A4A] text-[10px] font-semibold tracking-[0.04em] text-center font-inter">Pz</div>
+</div>
+<div class="grid grid-cols-7 gap-y-1.5">
+<!-- Week 1 -->
+<div class="flex flex-col items-center justify-center h-10 relative"></div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#8A8A8A] text-[13px] font-normal font-inter">1</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<div class="w-8 h-8 rounded-full bg-sport-accent flex items-center justify-center">
+<span class="text-[#0A0A0A] text-[13px] font-bold font-inter">2</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#8A8A8A] text-[13px] font-normal font-inter">3</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<div class="w-8 h-8 rounded-full bg-sport-accent flex items-center justify-center">
+<span class="text-[#0A0A0A] text-[13px] font-bold font-inter">4</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-sport-accent absolute bottom-0.5"></div>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<div class="w-8 h-8 rounded-full bg-sport-accent flex items-center justify-center">
+<span class="text-[#0A0A0A] text-[13px] font-bold font-inter">5</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#8A8A8A] text-[13px] font-normal font-inter">6</span>
+</div>
+<!-- Week 2 -->
+<div class="flex flex-col items-center justify-center h-10 relative">
+<div class="w-8 h-8 rounded-full border-[1.5px] border-sport-accent flex items-center justify-center">
+<span class="text-sport-accent text-[13px] font-bold font-inter">7</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">8</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">9</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">10</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">11</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">12</span>
+</div>
+<div class="flex flex-col items-center justify-center h-10 relative">
+<span class="text-[#4A4A4A] text-[13px] font-normal font-inter">13</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SPORT BREAKDOWN -->
+<div class="mt-4 px-5">
+<div class="bg-[#161616] border border-white/5 rounded-[20px] p-5">
+<span class="text-[#8A8A8A] text-[10px] font-semibold tracking-[0.1em] uppercase font-inter block mb-4">BRANŞ DAĞILIMI</span>
+<div class="flex flex-col gap-4">
+<!-- Yoga -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex gap-2.5 items-center">
+<div class="w-8 h-8 rounded-full bg-sport-accent/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-sport-accent" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+</div>
+<span class="text-white text-[14px] font-semibold font-inter">Yoga</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-white text-[13px] font-semibold font-inter">8 ders</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">%35</span>
+</div>
+</div>
+<div class="w-full h-1.5 bg-[#1F1F1F] rounded-full overflow-hidden">
+<div class="h-full bg-sport-accent rounded-full w-[35%]"></div>
+</div>
+</div>
+<!-- Fitness -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex gap-2.5 items-center">
+<div class="w-8 h-8 rounded-full bg-sport-accent/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-sport-accent" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+<span class="text-white text-[14px] font-semibold font-inter">Fitness</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-white text-[13px] font-semibold font-inter">9 ders</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">%39</span>
+</div>
+</div>
+<div class="w-full h-1.5 bg-[#1F1F1F] rounded-full overflow-hidden">
+<div class="h-full bg-sport-accent rounded-full w-[39%]"></div>
+</div>
+</div>
+<!-- Pilates -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex gap-2.5 items-center">
+<div class="w-8 h-8 rounded-full bg-sport-accent/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-sport-accent" style="font-variation-settings: 'FILL' 1;">accessibility_new</span>
+</div>
+<span class="text-white text-[14px] font-semibold font-inter">Pilates</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-white text-[13px] font-semibold font-inter">6 ders</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">%26</span>
+</div>
+</div>
+<div class="w-full h-1.5 bg-[#1F1F1F] rounded-full overflow-hidden">
+<div class="h-full bg-sport-accent rounded-full w-[26%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RECENT SESSIONS -->
+<div class="mt-6 px-5">
+<div class="flex justify-between items-center mb-3">
+<h2 class="text-white text-[14px] font-bold tracking-wide">SON SEANSLAR</h2>
+<button class="text-sport-accent text-[12px] font-semibold flex items-center">Tümü <span class="material-symbols-outlined text-[14px] ml-0.5">chevron_right</span></button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Session 1 -->
+<div class="bg-[#161616] border border-white/5 rounded-[14px] p-4 flex items-center gap-[14px]">
+<div class="w-[44px] flex flex-col items-center justify-center border-r border-white/5 pr-3">
+<span class="text-white text-[20px] font-extrabold tracking-[-0.4px] font-inter">05</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.06em] uppercase font-inter mt-0.5">Nis</span>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="text-white text-[14px] font-semibold font-inter">HIIT Cardio</span>
+<div class="flex items-center gap-[3px] mt-1">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Studio A</span>
+<span class="text-[#8A8A8A] text-[9px]">•</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">45 dk</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex text-sport-accent text-[11px] tracking-widest">★★★★★</div>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">−2 kredi</span>
+</div>
+</div>
+<!-- Session 2 -->
+<div class="bg-[#161616] border border-white/5 rounded-[14px] p-4 flex items-center gap-[14px]">
+<div class="w-[44px] flex flex-col items-center justify-center border-r border-white/5 pr-3">
+<span class="text-white text-[20px] font-extrabold tracking-[-0.4px] font-inter">04</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.06em] uppercase font-inter mt-0.5">Nis</span>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="text-white text-[14px] font-semibold font-inter">Vinyasa Yoga</span>
+<div class="flex items-center gap-[3px] mt-1">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Zen Room</span>
+<span class="text-[#8A8A8A] text-[9px]">•</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">60 dk</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex text-sport-accent text-[11px] tracking-widest">★★★★<span class="text-[#383838]">★</span></div>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">−1 kredi</span>
+</div>
+</div>
+<!-- Session 3 -->
+<div class="bg-[#161616] border border-white/5 rounded-[14px] p-4 flex items-center gap-[14px]">
+<div class="w-[44px] flex flex-col items-center justify-center border-r border-white/5 pr-3">
+<span class="text-white text-[20px] font-extrabold tracking-[-0.4px] font-inter">02</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.06em] uppercase font-inter mt-0.5">Nis</span>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="text-white text-[14px] font-semibold font-inter">CrossFit WOD</span>
+<div class="flex items-center gap-[3px] mt-1">
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">Garage</span>
+<span class="text-[#8A8A8A] text-[9px]">•</span>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">50 dk</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex text-sport-accent text-[11px] tracking-widest">★★★★★</div>
+<span class="text-[#8A8A8A] text-[11px] font-normal font-inter">−3 kredi</span>
+</div>
+</div>
+</div>
+</div>
+<!-- PERSONAL BESTS (FEATURED) -->
+<div class="mt-5 px-5 mb-8">
+<div class="bg-[#1F1F1F] border-[1.5px] border-sport-accent/30 rounded-[18px] p-[22px] relative overflow-hidden shadow-[0_0_32px_rgba(197,248,51,0.10)]">
+<div class="absolute inset-0 bg-sport-accent/5"></div>
+<div class="relative z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-sport-accent" style="font-variation-settings: 'FILL' 1;">trophy</span>
+<span class="text-sport-accent text-[10px] font-bold tracking-[0.12em] uppercase font-inter">KİŞİSEL REKORLAR</span>
+</div>
+<div class="relative z-10 mt-4 flex items-center">
+<div class="flex-1 flex flex-col items-center justify-center">
+<span class="text-sport-accent text-[22px] font-extrabold tracking-[-0.4px] font-inter">4 hafta</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.08em] uppercase font-inter mt-1">EN UZUN SERİ</span>
+</div>
+<div class="w-px h-10 bg-white/5 mx-2"></div>
+<div class="flex-1 flex flex-col items-center justify-center">
+<span class="text-white text-[22px] font-extrabold tracking-[-0.4px] font-inter">Mart</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.08em] uppercase font-inter mt-1">EN AKTİF AY</span>
+</div>
+<div class="w-px h-10 bg-white/5 mx-2"></div>
+<div class="flex-1 flex flex-col items-center justify-center">
+<span class="text-sport-accent text-[22px] font-extrabold tracking-[-0.4px] font-inter">47</span>
+<span class="text-[#8A8A8A] text-[9px] font-semibold tracking-[0.08em] uppercase font-inter mt-1">TOPLAM SEANS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM NAV BAR -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0F0F0F]/80 backdrop-blur-2xl border-t border-neutral-800 h-[84px] md:hidden shadow-none">
+<a class="flex flex-col items-center justify-center text-neutral-500 hover:text-neutral-200 transition-colors duration-300 active:scale-90 w-16" href="/home/">
+<span class="material-symbols-outlined text-[24px] mb-1">home</span>
+<span class="font-inter text-[10px] font-medium">Ana Sayfa</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-500 hover:text-neutral-200 transition-colors duration-300 active:scale-90 w-16" href="/discover/">
+<span class="material-symbols-outlined text-[24px] mb-1">search</span>
+<span class="font-inter text-[10px] font-medium">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-sport-accent transition-colors duration-300 active:scale-90 w-16" href="/training/">
+<span class="material-symbols-outlined text-[24px] mb-1" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span class="font-inter text-[10px] font-medium">Antrenman</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-500 hover:text-neutral-200 transition-colors duration-300 active:scale-90 w-16" href="/favorites/">
+<span class="material-symbols-outlined text-[24px] mb-1">favorite</span>
+<span class="font-inter text-[10px] font-medium">Favoriler</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-500 hover:text-neutral-200 transition-colors duration-300 active:scale-90 w-16" href="/profile/">
+<span class="material-symbols-outlined text-[24px] mb-1">person</span>
+<span class="font-inter text-[10px] font-medium">Profil</span>
+</a>
+</nav>
+<script defer src="/assets/demo.js"></script>
+</body></html>

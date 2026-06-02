@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Hedefin ne?</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#e0d2ff",
+                    "surface-container-highest": "#36343a",
+                    "outline-variant": "#494551",
+                    "on-tertiary": "#3e2e00",
+                    "on-primary": "#381e72",
+                    "on-primary-fixed-variant": "#4f378a",
+                    "surface": "#141218",
+                    "on-secondary-container": "#bfb2da",
+                    "surface-container": "#211f24",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#4b4263",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0f0d13",
+                    "surface-variant": "#36343a",
+                    "primary-container": "#6750a4",
+                    "tertiary-container": "#c9a74d",
+                    "on-tertiary-container": "#503d00",
+                    "inverse-on-surface": "#322f35",
+                    "on-surface-variant": "#cbc4d2",
+                    "background": "#141218",
+                    "primary-fixed-dim": "#cfbcff",
+                    "surface-container-low": "#1d1b20",
+                    "inverse-surface": "#e6e0e9",
+                    "outline": "#948e9c",
+                    "on-surface": "#e6e0e9",
+                    "on-secondary-fixed": "#1f1635",
+                    "on-background": "#e6e0e9",
+                    "tertiary-fixed-dim": "#e7c365",
+                    "secondary-fixed-dim": "#cdc0e9",
+                    "on-tertiary-fixed-variant": "#594400",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-bright": "#3b383e",
+                    "surface-tint": "#cfbcff",
+                    "surface-dim": "#141218",
+                    "secondary-container": "#4d4465",
+                    "primary": "#cfbcff",
+                    "inverse-primary": "#6750a4",
+                    "secondary-fixed": "#e9ddff",
+                    "tertiary-fixed": "#ffdf93",
+                    "tertiary": "#e7c365",
+                    "secondary": "#cdc0e9",
+                    "surface-container-high": "#2b292f",
+                    "on-secondary": "#342b4b",
+                    "on-primary-fixed": "#22005d",
+                    "primary-fixed": "#e9ddff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Public Sans"
+                    ],
+                    "display": [
+                            "Public Sans"
+                    ],
+                    "body": [
+                            "Public Sans"
+                    ],
+                    "label": [
+                            "Public Sans"
+                    ]
+            },
+            "fontSize": {}
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #050505;
+            color: #FFFFFF;
+        }
+        .text-lime { color: #D4FF4F; }
+        .bg-lime { background-color: #D4FF4F; }
+        .border-lime { border-color: #D4FF4F; }
+        .bg-surface-level1 { background-color: #0F0F0F; border-color: #262626; }
+        .bg-surface-level2 { background-color: #161616; }
+        .border-strong { border-color: #383838; }
+        .text-muted { color: #A1A1A1; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col items-center justify-center relative mx-auto w-full max-w-[390px] overflow-x-hidden">
+<!-- Top Navigation / Progress -->
+<header class="w-full px-4 pt-12 pb-6 flex flex-col gap-4 sticky top-0 z-10 bg-[#050505]/90 backdrop-blur-md border-b border-strong">
+<div class="flex justify-between items-center w-full">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-level2 hover:bg-surface-level1 transition-colors">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<span class="font-headline font-semibold text-sm tracking-widest text-muted uppercase">ADIM 4 / 5</span>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-1 bg-surface-level2 rounded-full overflow-hidden">
+<div class="h-full bg-lime rounded-full w-[80%] transition-all duration-500"></div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full flex-1 px-4 py-8 flex flex-col gap-8">
+<!-- Headline -->
+<div class="flex flex-col gap-2">
+<h1 class="font-headline text-3xl font-bold tracking-tight text-white">Hedefin ne?</h1>
+<p class="font-body text-base text-muted">Sana en uygun antrenman programını oluşturabilmemiz için temel hedefini seç.</p>
+</div>
+<!-- Goal Cards Stack -->
+<div class="flex flex-col gap-4">
+<!-- Selected Card 1 -->
+<label class="relative cursor-pointer group">
+<input checked="" class="peer sr-only" name="fitness_goal" type="radio"/>
+<div class="w-full min-h-[88px] flex items-center p-4 rounded-2xl bg-surface-level1 border-2 border-lime transition-all duration-200">
+<!-- Icon -->
+<div class="w-14 h-14 rounded-full bg-[#1A2608] flex items-center justify-center mr-4 shrink-0 text-lime">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">event_available</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1">
+<span class="font-headline font-semibold text-lg text-white">Düzenli alışkanlık edinmek</span>
+<span class="font-body text-sm text-muted line-clamp-1">Haftada en az 3 gün antrenman.</span>
+</div>
+<!-- Radio Indicator -->
+<div class="w-6 h-6 rounded-full border-2 border-lime flex items-center justify-center shrink-0 ml-4 bg-lime">
+<span class="material-symbols-outlined text-black text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<!-- Selection Highlight Overlay (Subtle) -->
+<div class="absolute inset-0 bg-lime/5 rounded-2xl pointer-events-none"></div>
+</label>
+<!-- Unselected Card 2 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="fitness_goal" type="radio"/>
+<div class="w-full min-h-[88px] flex items-center p-4 rounded-2xl bg-surface-level1 border border-[#262626] hover:border-strong transition-all duration-200">
+<!-- Icon -->
+<div class="w-14 h-14 rounded-full bg-surface-level2 flex items-center justify-center mr-4 shrink-0 text-muted group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">fitness_center</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1">
+<span class="font-headline font-semibold text-lg text-white group-hover:text-lime transition-colors">Kas kütlesi artırmak</span>
+<span class="font-body text-sm text-muted line-clamp-1">Hipertrofi odaklı güç antrenmanları.</span>
+</div>
+<!-- Radio Indicator -->
+<div class="w-6 h-6 rounded-full border-2 border-strong flex items-center justify-center shrink-0 ml-4">
+</div>
+</div>
+</label>
+<!-- Unselected Card 3 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="fitness_goal" type="radio"/>
+<div class="w-full min-h-[88px] flex items-center p-4 rounded-2xl bg-surface-level1 border border-[#262626] hover:border-strong transition-all duration-200">
+<!-- Icon -->
+<div class="w-14 h-14 rounded-full bg-surface-level2 flex items-center justify-center mr-4 shrink-0 text-muted group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">monitor_weight</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1">
+<span class="font-headline font-semibold text-lg text-white group-hover:text-lime transition-colors">Kilo vermek</span>
+<span class="font-body text-sm text-muted line-clamp-1">Kardiyo ve kalori yakımı odaklı.</span>
+</div>
+<!-- Radio Indicator -->
+<div class="w-6 h-6 rounded-full border-2 border-strong flex items-center justify-center shrink-0 ml-4">
+</div>
+</div>
+</label>
+<!-- Unselected Card 4 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="fitness_goal" type="radio"/>
+<div class="w-full min-h-[88px] flex items-center p-4 rounded-2xl bg-surface-level1 border border-[#262626] hover:border-strong transition-all duration-200">
+<!-- Icon -->
+<div class="w-14 h-14 rounded-full bg-surface-level2 flex items-center justify-center mr-4 shrink-0 text-muted group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">sports_gymnastics</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1">
+<span class="font-headline font-semibold text-lg text-white group-hover:text-lime transition-colors">Esneklik ve Mobilitie</span>
+<span class="font-body text-sm text-muted line-clamp-1">Postür düzeltme ve rahatlama.</span>
+</div>
+<!-- Radio Indicator -->
+<div class="w-6 h-6 rounded-full border-2 border-strong flex items-center justify-center shrink-0 ml-4">
+</div>
+</div>
+</label>
+</div>
+<div class="flex-1"></div> <!-- Spacer to push CTA to bottom -->
+</main>
+<!-- Bottom CTA Fixed Area -->
+<div class="w-full px-4 pb-10 pt-4 bg-gradient-to-t from-[#050505] to-transparent sticky bottom-0 z-10">
+<button class="w-full h-[54px] bg-lime text-black font-headline font-semibold text-lg rounded-full flex items-center justify-center gap-2 hover:bg-white transition-colors duration-300">
+            Devam Et
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+</body></html>

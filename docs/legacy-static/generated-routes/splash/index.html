@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife Splash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-primary-container": "#e0d2ff",
+                "surface-container-highest": "#36343a",
+                "outline-variant": "#494551",
+                "on-tertiary": "#3e2e00",
+                "on-primary": "#381e72",
+                "on-primary-fixed-variant": "#4f378a",
+                "surface": "#141218",
+                "on-secondary-container": "#bfb2da",
+                "surface-container": "#211f24",
+                "error-container": "#93000a",
+                "on-secondary-fixed-variant": "#4b4263",
+                "error": "#ffb4ab",
+                "surface-container-lowest": "#0f0d13",
+                "surface-variant": "#36343a",
+                "primary-container": "#6750a4",
+                "tertiary-container": "#c9a74d",
+                "on-tertiary-container": "#503d00",
+                "inverse-on-surface": "#322f35",
+                "on-surface-variant": "#cbc4d2",
+                "background": "#141218",
+                "primary-fixed-dim": "#cfbcff",
+                "surface-container-low": "#1d1b20",
+                "inverse-surface": "#e6e0e9",
+                "outline": "#948e9c",
+                "on-surface": "#e6e0e9",
+                "on-secondary-fixed": "#1f1635",
+                "on-background": "#e6e0e9",
+                "tertiary-fixed-dim": "#e7c365",
+                "secondary-fixed-dim": "#cdc0e9",
+                "on-tertiary-fixed-variant": "#594400",
+                "on-tertiary-fixed": "#241a00",
+                "on-error-container": "#ffdad6",
+                "on-error": "#690005",
+                "surface-bright": "#3b383e",
+                "surface-tint": "#cfbcff",
+                "surface-dim": "#141218",
+                "secondary-container": "#4d4465",
+                "primary": "#cfbcff",
+                "inverse-primary": "#6750a4",
+                "secondary-fixed": "#e9ddff",
+                "tertiary-fixed": "#ffdf93",
+                "tertiary": "#e7c365",
+                "secondary": "#cdc0e9",
+                "surface-container-high": "#2b292f",
+                "on-secondary": "#342b4b",
+                "on-primary-fixed": "#22005d",
+                "primary-fixed": "#e9ddff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {},
+        "fontFamily": {
+                "headline": [
+                        "Public Sans"
+                ],
+                "display": [
+                        "Public Sans"
+                ],
+                "body": [
+                        "Public Sans"
+                ],
+                "label": [
+                        "Public Sans"
+                ]
+        },
+        "fontSize": {}
+},
+    },
+  }
+</script>
+<style>
+  body {
+    background-color: #050505;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Public Sans', sans-serif;
+  }
+  
+  .atmospheric-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(212, 255, 79, 0.04) 0%, rgba(212, 255, 79, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .brand-container {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #F5F5F5;
+    letter-spacing: -2.5px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .brand-rule {
+    width: 64px;
+    height: 1px;
+    background-color: #D4FF4F;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  .brand-subtitle {
+    font-size: 11px;
+    font-weight: 500;
+    color: #6B6B6B;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+
+  .loader-container {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .loader-track {
+    width: 200px;
+    height: 1.5px;
+    background-color: #1F1F1F;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .loader-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    background-color: #D4FF4F;
+  }
+
+  .loader-text {
+    margin-top: 8px;
+    font-size: 9px;
+    color: #3A3A3A;
+    font-weight: 400;
+  }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="atmospheric-glow"></div>
+<div class="brand-container">
+<h1 class="brand-title">SPORTLIFE</h1>
+<div class="brand-rule"></div>
+<div class="brand-subtitle">ISTANBUL</div>
+</div>
+<div class="loader-container">
+<div class="loader-track">
+<div class="loader-fill"></div>
+</div>
+<div class="loader-text">Yükleniyor...</div>
+</div>
+<script defer src="/assets/demo.js"></script>
+</body></html>

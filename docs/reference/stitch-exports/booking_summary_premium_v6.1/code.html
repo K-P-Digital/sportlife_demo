@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife Booking Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Epilogue:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-variant": "#36343a",
+                        "secondary": "#cdc0e9",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "on-primary-container": "#e0d2ff",
+                        "secondary-container": "#4d4465",
+                        "on-error": "#690005",
+                        "on-tertiary": "#3e2e00",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#6750a4",
+                        "on-secondary-container": "#bfb2da",
+                        "tertiary": "#e7c365",
+                        "inverse-on-surface": "#322f35",
+                        "surface-container-lowest": "#0f0d13",
+                        "on-secondary-fixed": "#1f1635",
+                        "on-primary": "#381e72",
+                        "on-surface": "#e6e0e9",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#e9ddff",
+                        "on-primary-fixed": "#22005d",
+                        "on-background": "#e6e0e9",
+                        "tertiary-container": "#c9a74d",
+                        "background": "#141218",
+                        "outline": "#948e9c",
+                        "inverse-surface": "#e6e0e9",
+                        "surface-container": "#211f24",
+                        "on-tertiary-container": "#503d00",
+                        "surface-tint": "#cfbcff",
+                        "surface-container-low": "#1d1b20",
+                        "surface-container-high": "#2b292f",
+                        "surface-container-highest": "#36343a",
+                        "surface": "#141218",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-secondary": "#342b4b",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "primary-container": "#6750a4",
+                        "tertiary-fixed": "#ffdf93",
+                        "surface-bright": "#3b383e",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "outline-variant": "#494551",
+                        "surface-dim": "#141218",
+                        "secondary-fixed": "#e9ddff",
+                        "primary-fixed-dim": "#cfbcff",
+                        "primary": "#cfbcff",
+                        "on-surface-variant": "#cbc4d2",
+                        "brand-bg": "#050505",
+                        "brand-surface": "#0F0F0F",
+                        "brand-surface-2": "#161616",
+                        "brand-border": "#262626",
+                        "brand-border-strong": "#383838",
+                        "brand-accent": "#D4FF4F"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.125rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"],
+                        "epilogue": ["Epilogue", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-brand-bg text-on-surface min-h-screen pb-32">
+<!-- TopAppBar JSON Component (Transaction Mode - Nav rules dictate hiding active states and treating as back header) -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-4 h-16 bg-brand-bg border-b border-white/10 flat no shadows">
+<div class="flex items-center justify-between w-full">
+<button class="w-9 h-9 rounded-full bg-brand-surface-2 flex items-center justify-center hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-white text-xl">arrow_back</span>
+</button>
+<h1 class="font-epilogue font-bold text-lg tracking-tight uppercase text-white">Özet</h1>
+<div class="w-9 h-9"></div> <!-- Placeholder -->
+</div>
+</header>
+<main class="pt-20 px-4 max-w-md mx-auto space-y-4">
+<!-- BOOKING DETAILS CARD -->
+<section class="bg-brand-surface-2 rounded-2xl border border-white/5 p-5">
+<div class="flex justify-between items-start mb-6">
+<h2 class="text-lg font-semibold text-white">Zen Studio Kadıköy</h2>
+<span class="bg-brand-accent text-brand-bg text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">YOGA</span>
+</div>
+<div class="space-y-5">
+<!-- Date -->
+<div class="flex gap-4">
+<div class="w-9 h-9 rounded-full bg-brand-surface flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-brand-accent text-lg">calendar_month</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-white">Pazartesi, 26 Nisan</p>
+<p class="text-xs text-on-surface-variant mt-1">10:30 – 11:30 · 60 dakika</p>
+</div>
+</div>
+<!-- Location -->
+<div class="flex gap-4">
+<div class="w-9 h-9 rounded-full bg-brand-surface flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-brand-accent text-lg">location_on</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-white">Zen Studio Kadıköy</p>
+<p class="text-xs text-on-surface-variant mt-1">Moda Cad. No:12, Kadıköy</p>
+<a class="text-brand-accent text-xs font-medium mt-1 inline-block" href="#">Haritada Gör →</a>
+</div>
+</div>
+<!-- Instructor -->
+<div class="flex gap-4">
+<div class="w-9 h-9 rounded-full bg-brand-surface flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-brand-accent text-lg">person</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-white">Selin Karadeniz</p>
+<p class="text-xs text-on-surface-variant mt-1 text-tertiary">★ 4.9 <span class="text-on-surface-variant">· 340 ders</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- PAYMENT METHOD CARD -->
+<section>
+<h3 class="text-xs font-semibold text-on-surface-variant mb-2 px-1 uppercase tracking-wider">ÖDEME</h3>
+<div class="bg-brand-surface-2 rounded-2xl border border-white/5 p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-brand-surface flex items-center justify-center border border-brand-border">
+<span class="material-symbols-outlined text-outline text-xl">credit_card</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-white">Tek Giriş — Visa ••••4242</p>
+<p class="text-xs text-on-surface-variant mt-0.5">₺320 · Tek seferlik</p>
+</div>
+</div>
+<a class="text-brand-accent text-xs font-medium" href="#">Değiştir</a>
+</div>
+</section>
+<!-- VALUE NUDGE -->
+<section class="bg-[#1F1F1F] rounded-xl border border-dashed border-brand-border-strong p-3 flex justify-between items-center">
+<p class="text-xs text-white">Active paket alsan ₺260 olurdu.</p>
+<a class="text-brand-accent text-xs font-medium" href="#">₺60 tasarruf →</a>
+</section>
+<!-- PRICE BREAKDOWN -->
+<section>
+<h3 class="text-xs font-semibold text-on-surface-variant mb-2 px-1 uppercase tracking-wider">FATURA</h3>
+<div class="bg-brand-surface-2 rounded-2xl border border-white/5 p-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Ders ücreti</span>
+<span class="text-white font-medium">₺320</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">KDV</span>
+<span class="text-white font-medium">Dahil</span>
+</div>
+<div class="flex justify-between items-center text-sm pb-3 border-b border-brand-border">
+<span class="text-on-surface-variant">İşlem ücreti</span>
+<span class="text-white font-medium">₺0</span>
+</div>
+<div class="flex justify-between items-end pt-1">
+<span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">TOPLAM</span>
+<span class="text-2xl font-extrabold text-white leading-none">₺320</span>
+</div>
+</div>
+</section>
+<!-- CANCELLATION POLICY -->
+<section class="px-1 pt-2 pb-6">
+<h4 class="text-xs font-semibold text-white mb-1">İptal Politikası</h4>
+<p class="text-[11px] text-on-surface-variant">1 saat öncesine kadar ücretsiz iptal. Bu ay 2 trafik affı hakkın var.</p>
+</section>
+</main>
+<!-- STICKY CTA -->
+<div class="fixed bottom-0 left-0 w-full z-40 bg-[#0A0A0A] border-t border-brand-border p-4 pb-safe flex flex-col items-center">
+<button class="w-full max-w-md h-[54px] rounded-full bg-brand-accent text-brand-bg font-bold text-[15px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(212,255,79,0.2)]">
+            ₺320 Öde ve Onayla
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="mt-3 text-xs font-medium text-on-surface-variant hover:text-white transition-colors">
+            Vazgeç
+        </button>
+</div>
+<!-- NOTE: BottomNavBar JSON Component omitted per 'Contextual State & Identity' logic - this is a transactional flow -->
+</body></html>

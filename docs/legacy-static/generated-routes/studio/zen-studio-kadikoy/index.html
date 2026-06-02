@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Lexend:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#c5e7ff",
+                        "on-tertiary-fixed-variant": "#274b5f",
+                        "surface-bright": "#383a2d",
+                        "on-tertiary-fixed": "#001e2d",
+                        "on-tertiary-container": "#45687d",
+                        "on-secondary-fixed-variant": "#474646",
+                        "inverse-primary": "#526600",
+                        "surface": "#121409",
+                        "error-container": "#93000a",
+                        "outline": "#8f937b",
+                        "background": "#121409",
+                        "surface-container-low": "#1a1d11",
+                        "on-primary": "#293500",
+                        "surface-container-highest": "#333629",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#4a4949",
+                        "primary": "#ffffef",
+                        "surface-container-lowest": "#0d0f05",
+                        "surface-variant": "#333629",
+                        "surface-container-high": "#292b1f",
+                        "on-tertiary": "#0c3447",
+                        "secondary": "#c8c6c5",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-dim": "#121409",
+                        "surface-container": "#1e2115",
+                        "tertiary": "#fefdff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed-dim": "#aed50d",
+                        "on-primary-fixed-variant": "#3d4d00",
+                        "on-primary-container": "#566c00",
+                        "on-background": "#e2e4d1",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e2e4d1",
+                        "on-primary-fixed": "#171e00",
+                        "outline-variant": "#444934",
+                        "on-secondary": "#313030",
+                        "inverse-on-surface": "#2f3225",
+                        "on-error-container": "#ffdad6",
+                        "inverse-surface": "#e2e4d1",
+                        "primary-fixed": "#c9f236",
+                        "surface-tint": "#aed50d",
+                        "on-surface-variant": "#c5c9ae",
+                        "tertiary-fixed-dim": "#a8cbe4",
+                        "tertiary-container": "#c2e6ff",
+                        "primary-container": "#c8f135"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        "container-margin": "20px",
+                        "stack-gap": "16px",
+                        "section-gap": "32px",
+                        "inline-padding": "12px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Lexend", "sans-serif"],
+                        "body-lg": ["Lexend", "sans-serif"],
+                        "h3": ["Epilogue", "sans-serif"],
+                        "h2": ["Epilogue", "sans-serif"],
+                        "button-text": ["Lexend", "sans-serif"],
+                        "h1": ["Epilogue", "sans-serif"],
+                        "label-caps": ["Lexend", "sans-serif"]
+                    },
+                    fontSize: {
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "26px", fontWeight: "400" }],
+                        "h3": ["24px", { lineHeight: "28px", fontWeight: "700" }],
+                        "h2": ["32px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "button-text": ["16px", { lineHeight: "20px", fontWeight: "700" }],
+                        "h1": ["40px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface-container-lowest text-on-background font-body-md min-h-screen w-full max-w-[390px] mx-auto relative overflow-x-hidden">
+<!-- Top Navigation (Shell suppressed due to Transactional/Details intent) -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-4 h-16 z-50 pointer-events-none">
+<a aria-label="Geri" class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center border border-white/5 pointer-events-auto" href="/discover/">
+<span class="material-symbols-outlined text-on-surface">arrow_back</span>
+</a>
+<div class="flex gap-2 pointer-events-auto">
+<button class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center border border-white/5">
+<span class="material-symbols-outlined text-on-surface">favorite_border</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center border border-white/5">
+<span class="material-symbols-outlined text-on-surface">share</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full h-[280px]">
+<img alt="zen studio interior with yoga mats" class="w-full h-full object-cover" data-alt="dark moody indoor yoga studio with wooden floors hanging plants and soft warm string lighting empty mats laid out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4n2D47dW-PBMfUmrit9-tQphkH0uvy3OAMYFRn5FM6UVUGOD9cEksrv-aibNsnani-Yb58WtEKYaqwcAJvxGBzHVACkWo5Qz2FVREnIAvlmlV-hwXxp_WbBqJfutTwNrAuzf5Msx96ZnXBeKSB8RGJDbFFyqiHEqvsqon9v-4MTr_guGBjFo0ZCyTn4sHGICFo4KXCsmWHEpBHrlb17WmnTJAuOikashjYRmbQ0Bqtsqa2lNFMmDs53ixTWtRqLm5uv1y50GzO8A"/>
+<!-- Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/40 to-transparent w-1/2"></div>
+<!-- Tag -->
+<div class="absolute bottom-4 left-container-margin">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-fixed/20 border border-primary-fixed text-primary-fixed font-label-caps text-label-caps">
+                YOGA · GRUP DERS
+            </span>
+</div>
+</section>
+<!-- Main Content Canvas -->
+<main class="px-container-margin pb-32">
+<!-- Studio Info -->
+<div class="mt-4 flex flex-col gap-2">
+<h1 class="font-h2 text-h2 text-on-surface">Zen Studio Kadıköy</h1>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-md text-sm">
+<div class="flex items-center gap-1 text-primary-fixed">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+</div>
+<span>(87 yorum)</span>
+<span class="w-1 h-1 rounded-full bg-on-surface-variant/50"></span>
+<span>0.8 km</span>
+<span class="w-1 h-1 rounded-full bg-on-surface-variant/50"></span>
+<div class="flex items-center gap-1.5">
+<div class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></div>
+<span>Açık</span>
+</div>
+</div>
+</div>
+<!-- Quick Stats Bento -->
+<div class="mt-section-gap grid grid-cols-3 gap-2 bg-surface-container rounded-xl p-4 border border-white/5">
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="font-h3 text-h3 text-on-surface">87</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">YORUM</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 border-x border-white/5">
+<span class="font-h3 text-h3 text-on-surface">4.9</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">PUAN</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="font-h3 text-h3 text-on-surface">12</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant text-center">DERS/HAFTA</span>
+</div>
+</div>
+<!-- Hakkında -->
+<div class="mt-section-gap">
+<h2 class="font-button-text text-button-text text-on-surface mb-stack-gap uppercase tracking-wider">Hakkında</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                İstanbul'un kalbinde, Moda'da. Mat yoga, reformer pilates, prenatal ve restoratif yoga. Her seviyeye uygun ders programı.
+            </p>
+<button class="mt-2 font-button-text text-sm text-primary-fixed hover:opacity-80 transition-opacity">Devamını oku</button>
+</div>
+<!-- Olanaklar (Horizontal Scroll Chips) -->
+<div class="mt-section-gap">
+<h2 class="font-button-text text-button-text text-on-surface mb-stack-gap uppercase tracking-wider">Olanaklar</h2>
+<div class="flex overflow-x-auto hide-scrollbar gap-3 pb-2 -mx-container-margin px-container-margin">
+<div class="flex-none flex items-center gap-2 bg-surface-container px-4 py-2 rounded-lg border border-white/5">
+<span class="text-xl">🚿</span>
+<span class="font-label-caps text-label-caps text-on-surface">Duş</span>
+</div>
+<div class="flex-none flex items-center gap-2 bg-surface-container px-4 py-2 rounded-lg border border-white/5">
+<span class="text-xl">🔒</span>
+<span class="font-label-caps text-label-caps text-on-surface">Dolap</span>
+</div>
+<div class="flex-none flex items-center gap-2 bg-surface-container px-4 py-2 rounded-lg border border-white/5">
+<span class="text-xl">🅿️</span>
+<span class="font-label-caps text-label-caps text-on-surface">Otopark</span>
+</div>
+<div class="flex-none flex items-center gap-2 bg-surface-container px-4 py-2 rounded-lg border border-white/5">
+<span class="text-xl">🎯</span>
+<span class="font-label-caps text-label-caps text-on-surface">Mat</span>
+</div>
+</div>
+</div>
+<!-- Bugün Müsait (Horizontal Scroll Slots) -->
+<div class="mt-section-gap">
+<div class="flex justify-between items-end mb-stack-gap">
+<h2 class="font-button-text text-button-text text-on-surface uppercase tracking-wider">Bugün Müsait</h2>
+<button class="font-body-md text-sm text-on-surface-variant underline">Tümünü gör</button>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-3 pb-2 -mx-container-margin px-container-margin">
+<div class="flex-none w-32 bg-surface-container rounded-xl p-3 border border-white/5 flex flex-col gap-2">
+<span class="font-button-text text-button-text text-on-surface">09:00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">3 yer</span>
+</div>
+<div class="flex-none w-32 bg-surface-container rounded-xl p-3 border border-white/5 flex flex-col gap-2">
+<span class="font-button-text text-button-text text-on-surface">10:30</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">5 yer</span>
+</div>
+<div class="flex-none w-32 bg-surface-container rounded-xl p-3 border border-white/5 flex flex-col gap-2">
+<span class="font-button-text text-button-text text-on-surface">12:00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">8 yer</span>
+</div>
+<div class="flex-none w-32 bg-primary-fixed/5 rounded-xl p-3 border border-dashed border-primary-fixed flex flex-col gap-2 relative">
+<span class="absolute top-2 right-2 font-label-caps text-[10px] text-primary-fixed">-15%</span>
+<span class="font-button-text text-button-text text-on-surface">14:00</span>
+<span class="font-label-caps text-label-caps text-primary-fixed">8 yer</span>
+</div>
+</div>
+</div>
+<!-- Değerlendirmeler -->
+<div class="mt-section-gap">
+<h2 class="font-button-text text-button-text text-on-surface mb-stack-gap uppercase tracking-wider">Değerlendirmeler</h2>
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container rounded-xl p-4 border border-white/5">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-button-text text-on-surface">AY</div>
+<div class="flex text-primary-fixed text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Selin'in dersleri inanılmaz. Stüdyo tertemiz ve ekipmanlar çok yeni.</p>
+</div>
+<div class="bg-surface-container rounded-xl p-4 border border-white/5">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-button-text text-on-surface">MK</div>
+<div class="flex text-primary-fixed text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-on-surface-variant">star</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Güzel bir deneyimdi, ancak akşam saatlerinde duşlar biraz kalabalık oluyor.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-lowest/90 backdrop-blur-xl border-t border-white/5 p-container-margin pb-safe flex items-center justify-between z-50">
+<div class="flex flex-col">
+<span class="font-button-text text-lg text-primary-fixed">2 kredi</span>
+<span class="font-body-md text-sm text-on-surface-variant">tek girişle ₺320</span>
+</div>
+<a class="h-[52px] px-8 bg-primary-fixed text-on-primary-fixed font-button-text text-button-text rounded-xl flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all" href="/studio/zen-studio-kadikoy/slots/">
+            Rezerve Et
+            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+<script defer src="/assets/demo.js"></script>
+</body></html>

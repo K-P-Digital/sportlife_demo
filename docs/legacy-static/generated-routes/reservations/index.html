@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Rezervasyonlarım</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Epilogue:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#948e9c",
+                        "inverse-surface": "#e6e0e9",
+                        "background": "#141218",
+                        "tertiary-container": "#c9a74d",
+                        "on-background": "#e6e0e9",
+                        "primary-fixed": "#e9ddff",
+                        "on-primary-fixed": "#22005d",
+                        "on-surface": "#e6e0e9",
+                        "error": "#ffb4ab",
+                        "on-primary": "#381e72",
+                        "on-secondary-fixed": "#1f1635",
+                        "surface-container-lowest": "#0f0d13",
+                        "inverse-on-surface": "#322f35",
+                        "tertiary": "#e7c365",
+                        "on-secondary-container": "#bfb2da",
+                        "inverse-primary": "#6750a4",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#3e2e00",
+                        "secondary-container": "#4d4465",
+                        "on-error": "#690005",
+                        "surface-variant": "#36343a",
+                        "secondary": "#cdc0e9",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "on-primary-container": "#e0d2ff",
+                        "on-tertiary-fixed": "#241a00",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#cfbcff",
+                        "primary": "#cfbcff",
+                        "on-surface-variant": "#cbc4d2",
+                        "surface-dim": "#141218",
+                        "secondary-fixed": "#e9ddff",
+                        "outline-variant": "#494551",
+                        "tertiary-fixed": "#ffdf93",
+                        "surface-bright": "#3b383e",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "primary-container": "#6750a4",
+                        "on-secondary": "#342b4b",
+                        "surface": "#141218",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "surface-container-highest": "#36343a",
+                        "surface-container-low": "#1d1b20",
+                        "surface-container-high": "#2b292f",
+                        "surface-tint": "#cfbcff",
+                        "surface-container": "#211f24",
+                        "on-tertiary-container": "#503d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans"],
+                        "display": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #050505; color: #FFFFFF; font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .fill-icon { font-variation-settings: 'FILL' 1; }
+        /* Custom Colors based on brief to match exact hexes, falling back to theme when possible but respecting strict brief requirements */
+        .bg-lime-accent { background-color: #C5F833; }
+        .text-lime-accent { color: #C5F833; }
+        .border-lime-accent { border-color: rgba(197, 248, 51, 0.40); }
+        .text-red-alert { color: #FF4D4D; }
+        .bg-card-dark { background-color: #161616; }
+        .bg-card-highlight { background-color: #1F1F1F; }
+        
+        /* Layout constraint for mobile canvas */
+        .mobile-canvas {
+            max-width: 390px;
+            margin: 0 auto;
+            min-height: 844px;
+            position: relative;
+            background-color: #050505;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            overflow-x: hidden;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="antialiased">
+<div class="mobile-canvas pb-24">
+<!-- TopAppBar from JSON & Brief -->
+<!-- JSON: {"name": "TopAppBar", "type": "small_center_aligned", "headline": "Rezervasyonlarım", "leading_type": "icon", "leading_icon": "arrow_back", "trailing_type": "icon", "trailing_icon": "more_vert", "style_bg_color": "bg-[#050505]", "style_primary_color": "text-[#C8F135]", "style_typography": "font-['Epilogue'] tracking-tight font-bold", "style_brand_logo": "text-xl font-black text-[#C8F135]", "style_component_shape": "docked full-width top-0 border-b", "style_separation_logic": "border-white/10", "style_shadows_and_elevation": "flat no shadows", "style_active_navigation": "text-[#C8F135]", "style_inactive_navigation": "text-zinc-500", "style_universal_hover": "hover:opacity-80 transition-opacity", "style_interactions": "Active: scale-95 transition-transform", "style_shell_layout": "flex justify-between items-center w-full px-5 h-16"} -->
+<header class="flex justify-between items-center w-full px-5 h-16 bg-[#050505] docked full-width top-0 border-b border-white/10 flat no shadows sticky z-40 pt-safe mt-[54px]">
+<a aria-label="Profile dön" class="w-9 h-9 rounded-full bg-card-dark flex items-center justify-center hover:opacity-80 transition-opacity" href="/profile/">
+<span class="material-symbols-outlined text-white text-xl">arrow_back</span>
+</a>
+<h1 class="text-[17px] font-bold text-white tracking-tight font-['Epilogue']">Rezervasyonlarım</h1>
+<button class="w-9 h-9 rounded-full bg-card-dark flex items-center justify-center hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#B8B8B8] text-xl">more_vert</span>
+</button>
+</header>
+<!-- Content Area -->
+<main class="px-5">
+<!-- Segmented Control -->
+<div class="mt-5 p-1 rounded-[14px] bg-card-dark border border-white/5 flex items-center">
+<button class="flex-1 py-[6px] text-[13px] font-bold text-[#0A0A0A] bg-lime-accent rounded-[10px] shadow-[0_0_8px_rgba(197,248,51,0.2)] transition-all">
+                Yaklaşan
+            </button>
+<button class="flex-1 py-[6px] text-[13px] font-medium text-[#8A8A8A] bg-transparent rounded-[10px] transition-all hover:text-white">
+                Geçmiş
+            </button>
+</div>
+<!-- Upcoming List: BU HAFTA -->
+<div class="mt-8">
+<h2 class="text-[10px] font-semibold text-[#8A8A8A] uppercase tracking-wider mb-3">BU HAFTA</h2>
+<!-- Card 1 (Highlighted Today's Booking) -->
+<div class="relative bg-card-highlight border-[1.5px] border-lime-accent rounded-[18px] p-4 mb-4 shadow-[0_0_15px_rgba(197,248,51,0.05)] overflow-hidden">
+<!-- Left edge indicator -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-lime-accent"></div>
+<div class="flex justify-between items-center mb-3">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-lime-accent animate-pulse"></div>
+<span class="text-lime-accent text-xs font-bold tracking-wide">BUGÜN · 10:30</span>
+</div>
+<a class="text-lime-accent text-xs font-semibold flex items-center gap-1 hover:opacity-80 transition-opacity" href="/qr-entry/">
+                        QR Kodu <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="mb-4">
+<h3 class="text-[17px] font-bold text-white mb-1">Zen Studio Kadıköy</h3>
+<p class="text-[12px] text-[#B8B8B8]">Mat Yoga · 60 dakika · Eğitmen Selin K.</p>
+</div>
+<div class="flex justify-between items-center pt-3 border-t border-white/5">
+<div class="px-3 py-1.5 rounded-full bg-[#C5F833]/10 border border-[#C5F833]/20">
+<span class="text-lime-accent text-[11px] font-semibold">Tek Giriş · ₺320 ödendi</span>
+</div>
+<button class="text-red-alert text-[12px] font-semibold hover:opacity-80 transition-opacity">
+                        İptal Et
+                    </button>
+</div>
+</div>
+<!-- Card 2 (Upcoming Thursday) -->
+<div class="bg-card-dark border border-white/5 rounded-[18px] p-4 mb-8">
+<div class="mb-3">
+<span class="text-[#8A8A8A] text-xs font-bold tracking-wide">PERŞEMBE · 19:30</span>
+</div>
+<div class="mb-4">
+<h3 class="text-[16px] font-bold text-white mb-1">Form Gym Bağdat</h3>
+<p class="text-[12px] text-[#8A8A8A]">Fitness Grup Ders · 45 dk</p>
+</div>
+<div class="flex justify-between items-center pt-3 border-t border-white/5">
+<div class="px-3 py-1.5 rounded-full bg-[#C5F833]/10 border border-[#C5F833]/20">
+<span class="text-lime-accent text-[11px] font-semibold">1 kredi kullanıldı</span>
+</div>
+<button class="text-red-alert text-[12px] font-semibold hover:opacity-80 transition-opacity">
+                        İptal Et
+                    </button>
+</div>
+</div>
+</div>
+<!-- Section 'GELECEK HAFTA' -->
+<div>
+<h2 class="text-[10px] font-semibold text-[#8A8A8A] uppercase tracking-wider mb-3">GELECEK HAFTA</h2>
+<!-- Card 3 (Next Tuesday) -->
+<div class="bg-card-dark border border-white/5 rounded-[18px] p-4 mb-4">
+<div class="mb-3">
+<span class="text-[#8A8A8A] text-xs font-bold tracking-wide">SALI · 09:00</span>
+</div>
+<div class="mb-4">
+<h3 class="text-[16px] font-bold text-white mb-1">Pilates Studio Moda</h3>
+<p class="text-[12px] text-[#8A8A8A]">Reformer · 55 dk</p>
+</div>
+<div class="flex justify-between items-center pt-3 border-t border-white/5">
+<div class="px-3 py-1.5 rounded-full bg-[#C5F833]/10 border border-[#C5F833]/20">
+<span class="text-lime-accent text-[11px] font-semibold">3 kredi</span>
+</div>
+<button class="text-red-alert text-[12px] font-semibold hover:opacity-80 transition-opacity">
+                        İptal Et
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<!-- JSON: {"name": "BottomNavBar", "type": "label_icon", "destination_count": "5", "label_texts": ["Ana Sayfa", "Keşfet", "Antrenman", "Favoriler", "Profil"], "icons": ["home", "explore", "fitness_center", "favorite", "person"], "style_bg_color": "bg-[#050505]/95 backdrop-blur-md", "style_primary_color": "text-[#C8F135]", "style_typography": "font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest", "style_brand_logo": "hidden", "style_component_shape": "fixed bottom-0 w-full z-50 border-t", "style_separation_logic": "border-white/5", "style_shadows_and_elevation": "shadow-2xl", "style_active_navigation": "flex flex-col items-center justify-center text-[#C8F135] scale-110 transition-all", "style_inactive_navigation": "flex flex-col items-center justify-center text-zinc-600", "style_universal_hover": "hover:text-zinc-300", "style_interactions": "Active: tap-highlight-none", "style_shell_layout": "fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-2"} -->
+<nav class="fixed bottom-0 w-full max-w-[390px] z-50 border-t border-white/5 shadow-2xl bg-[#0A0A0A] backdrop-blur-md h-20 pb-safe px-2 flex justify-around items-center">
+<!-- Not a primary navigation screen per strict rules? Actually 'Rezervasyonlarım' implies a deeper transaction view, but user explicitly asked for "Tab Bar: Background: #0A0A0A. Push view style: no active indicator. Inactive tabs: icon outline #4A4A4A, label #8A8A8A." -> Proceeding with this specific override. -->
+<button class="flex flex-col items-center justify-center text-zinc-600 hover:text-zinc-300 gap-1">
+<span class="material-symbols-outlined text-[#4A4A4A]">home</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest text-[#8A8A8A]">Ana Sayfa</span>
+</button>
+<button class="flex flex-col items-center justify-center text-zinc-600 hover:text-zinc-300 gap-1">
+<span class="material-symbols-outlined text-[#4A4A4A]">explore</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest text-[#8A8A8A]">Keşfet</span>
+</button>
+<button class="flex flex-col items-center justify-center text-zinc-600 hover:text-zinc-300 gap-1">
+<span class="material-symbols-outlined text-[#4A4A4A]">fitness_center</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest text-[#8A8A8A]">Antrenman</span>
+</button>
+<button class="flex flex-col items-center justify-center text-zinc-600 hover:text-zinc-300 gap-1">
+<span class="material-symbols-outlined text-[#4A4A4A]">favorite</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest text-[#8A8A8A]">Favoriler</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#C8F135] scale-110 transition-all gap-1 active">
+<span class="material-symbols-outlined text-[#C8F135] fill-icon">person</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest text-[#C8F135]">Profil</span>
+</button>
+</nav>
+</div>
+<script defer src="/assets/demo.js"></script>
+</body></html>

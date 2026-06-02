@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Kayıt Adım 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#e0d2ff",
+                        "surface-container-highest": "#36343a",
+                        "outline-variant": "#494551",
+                        "on-tertiary": "#3e2e00",
+                        "on-primary": "#381e72",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "surface": "#141218",
+                        "on-secondary-container": "#bfb2da",
+                        "surface-container": "#211f24",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0f0d13",
+                        "surface-variant": "#36343a",
+                        "primary-container": "#6750a4",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary-container": "#503d00",
+                        "inverse-on-surface": "#322f35",
+                        "on-surface-variant": "#cbc4d2",
+                        "background": "#141218",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-container-low": "#1d1b20",
+                        "inverse-surface": "#e6e0e9",
+                        "outline": "#948e9c",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary-fixed": "#1f1635",
+                        "on-background": "#e6e0e9",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-bright": "#3b383e",
+                        "surface-tint": "#cfbcff",
+                        "surface-dim": "#141218",
+                        "secondary-container": "#4d4465",
+                        "primary": "#cfbcff",
+                        "inverse-primary": "#6750a4",
+                        "secondary-fixed": "#e9ddff",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary": "#e7c365",
+                        "secondary": "#cdc0e9",
+                        "surface-container-high": "#2b292f",
+                        "on-secondary": "#342b4b",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed": "#e9ddff"
+                    },
+                    "fontFamily": {
+                        "sans": ["Public Sans", "sans-serif"],
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #050505;
+            color: #e6e0e9;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="antialiased min-h-screen flex flex-col max-w-[390px] mx-auto relative overflow-x-hidden font-sans">
+<!-- Top Chrome / Header -->
+<header class="sticky top-0 z-50 px-4 pt-4 pb-2 bg-[#050505]/90 backdrop-blur-md">
+<div class="flex items-center justify-between h-12">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-on-surface">chevron_left</span>
+</button>
+<span class="text-sm font-bold text-on-surface-variant tracking-wider">ADIM 1 / 5</span>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</div>
+<!-- Progress Bar -->
+<div class="h-1 w-full bg-surface-container-high rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-[#D4FF4F] w-1/5 rounded-full shadow-[0_0_10px_rgba(212,255,79,0.5)]"></div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 pt-8 pb-32 flex flex-col gap-8">
+<!-- Headline -->
+<div>
+<h1 class="text-[32px] font-[800] leading-tight text-on-surface tracking-tight">Seni tanıyalım.</h1>
+<p class="text-on-surface-variant mt-2 text-sm">Hesabını oluşturmak için temel bilgilerini gir.</p>
+</div>
+<!-- Form Fields -->
+<form class="flex flex-col gap-4">
+<!-- Ad (Focused) -->
+<div class="relative">
+<label class="block text-xs font-semibold text-on-surface-variant mb-1.5 uppercase tracking-wide">Ad</label>
+<div class="relative">
+<input class="w-full h-[54px] bg-[#161616] text-on-surface rounded-xl px-4 border border-[#D4FF4F] focus:outline-none focus:ring-0 text-base shadow-[0_0_15px_rgba(212,255,79,0.1)] transition-all" type="text" value="Can"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-[#D4FF4F] text-xl">check_circle</span>
+</div>
+</div>
+<!-- Soyad -->
+<div>
+<label class="block text-xs font-semibold text-on-surface-variant mb-1.5 uppercase tracking-wide">Soyad</label>
+<input class="w-full h-[54px] bg-[#161616] text-on-surface rounded-xl px-4 border border-[#262626] focus:border-[#383838] focus:outline-none focus:ring-0 placeholder:text-[#A1A1A1] text-base transition-colors" placeholder="Soyadın" type="text"/>
+</div>
+<!-- E-posta -->
+<div>
+<label class="block text-xs font-semibold text-on-surface-variant mb-1.5 uppercase tracking-wide">E-posta</label>
+<input class="w-full h-[54px] bg-[#161616] text-on-surface rounded-xl px-4 border border-[#262626] focus:border-[#383838] focus:outline-none focus:ring-0 placeholder:text-[#A1A1A1] text-base transition-colors" placeholder="ornek@email.com" type="email"/>
+</div>
+<!-- Şifre -->
+<div>
+<label class="block text-xs font-semibold text-on-surface-variant mb-1.5 uppercase tracking-wide">Şifre</label>
+<div class="relative">
+<input class="w-full h-[54px] bg-[#161616] text-on-surface rounded-xl px-4 pr-12 border border-[#262626] focus:border-[#383838] focus:outline-none focus:ring-0 placeholder:text-[#A1A1A1] text-base transition-colors" type="password" value="secretpassword"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-xl">visibility_off</span>
+</button>
+</div>
+<!-- Password Strength -->
+<div class="flex items-center gap-1 mt-2 px-1">
+<div class="h-1 flex-1 bg-[#D4FF4F] rounded-full shadow-[0_0_5px_rgba(212,255,79,0.3)]"></div>
+<div class="h-1 flex-1 bg-[#D4FF4F] rounded-full shadow-[0_0_5px_rgba(212,255,79,0.3)]"></div>
+<div class="h-1 flex-1 bg-surface-container-high rounded-full"></div>
+<span class="text-[10px] text-on-surface-variant ml-2 font-medium">Orta</span>
+</div>
+</div>
+<!-- Şifre Tekrar -->
+<div>
+<label class="block text-xs font-semibold text-on-surface-variant mb-1.5 uppercase tracking-wide">Şifre Tekrar</label>
+<input class="w-full h-[54px] bg-[#161616] text-on-surface rounded-xl px-4 border border-[#262626] focus:border-[#383838] focus:outline-none focus:ring-0 placeholder:text-[#A1A1A1] text-base transition-colors" placeholder="Şifreni onayla" type="password"/>
+</div>
+</form>
+</main>
+<!-- Bottom CTA Fixed -->
+<div class="fixed bottom-0 left-0 w-full max-w-[390px] mx-auto bg-gradient-to-t from-[#050505] via-[#050505]/90 to-transparent pt-12 pb-8 px-4 z-40">
+<button class="w-full h-[54px] bg-[#D4FF4F] text-[#050505] rounded-full font-semibold text-base flex items-center justify-center gap-2 hover:bg-[#D4FF4F]/90 transition-colors active:scale-[0.98]">
+<span>Devam Et</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<script defer src="/assets/demo.js"></script>
+</body></html>

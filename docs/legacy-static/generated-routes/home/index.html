@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Ana Sayfa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#292b1f",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#e2e4d1",
+                        "on-primary": "#293500",
+                        "surface-tint": "#aed50d",
+                        "primary": "#ffffef",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#c9f236",
+                        "tertiary-container": "#c2e6ff",
+                        "inverse-on-surface": "#2f3225",
+                        "on-tertiary-container": "#45687d",
+                        "primary-fixed-dim": "#aed50d",
+                        "tertiary-fixed": "#c5e7ff",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#274b5f",
+                        "outline": "#8f937b",
+                        "inverse-primary": "#526600",
+                        "surface-container-highest": "#333629",
+                        "on-surface-variant": "#c5c9ae",
+                        "background": "#121409",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-bright": "#383a2d",
+                        "on-primary-fixed": "#171e00",
+                        "secondary": "#c8c6c5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-dim": "#121409",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#a8cbe4",
+                        "outline-variant": "#444934",
+                        "surface-variant": "#333629",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-background": "#e2e4d1",
+                        "secondary-container": "#4a4949",
+                        "tertiary": "#fefdff",
+                        "surface-container": "#1e2115",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#313030",
+                        "on-primary-container": "#566c00",
+                        "on-secondary-container": "#bab8b7",
+                        "inverse-surface": "#e2e4d1",
+                        "on-tertiary-fixed": "#001e2d",
+                        "surface-container-low": "#1a1d11",
+                        "surface-container-lowest": "#0d0f05",
+                        "on-tertiary": "#0c3447",
+                        "primary-container": "#c8f135",
+                        "surface": "#121409",
+                        "on-primary-fixed-variant": "#3d4d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap": "16px",
+                        "section-gap": "32px",
+                        "inline-padding": "12px",
+                        "container-margin": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["lexend"],
+                        "h2": ["epilogue"],
+                        "h3": ["epilogue"],
+                        "h1": ["epilogue"],
+                        "body-md": ["lexend"],
+                        "button-text": ["lexend"],
+                        "label-caps": ["lexend"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h2": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "h3": ["24px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "h1": ["40px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "button-text": ["16px", {"lineHeight": "20px", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0A0A0A; color: #F0F0F0; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="font-body-md antialiased pb-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Web (Hidden on Mobile) -->
+<header class="hidden md:flex fixed top-0 w-full z-50 justify-between items-center px-5 h-16 bg-neutral-950/90 dark:bg-neutral-950/90 border-b border-white/10 flat no shadows">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-neutral-500 cursor-pointer hover:opacity-80 transition-opacity active:scale-95 transition-transform">menu</span>
+<span class="text-2xl font-black text-[#C8F135] font-epilogue uppercase tracking-widest">SPORTLIFE</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-neutral-500 cursor-pointer hover:opacity-80 transition-opacity active:scale-95 transition-transform">notifications</span>
+</div>
+</header>
+<!-- Mobile Header Container (Padding Top added for TopAppBar on Web, but mostly standalone for mobile layout) -->
+<main class="w-full max-w-[390px] mx-auto min-h-screen pt-[54px] px-[20px] md:pt-24 flex flex-col gap-stack-gap">
+<!-- HEADER -->
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="text-[13px] font-[400] text-[#888888] font-body-md">İyi sabahlar,</span>
+<span class="text-[28px] font-[800] text-[#F0F0F0] tracking-[-0.5px] font-h2 leading-none mt-1">Ayşe.</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative">
+<div class="w-10 h-10 rounded-full border-2 border-[#C8F135] bg-[#1C1C1C] flex items-center justify-center font-button-text font-[700] text-[#C8F135] text-[14px]">
+                        AS
+                    </div>
+<div class="absolute top-0 right-0 w-[6px] h-[6px] bg-[#C8F135] rounded-full border border-[#0A0A0A]"></div>
+</div>
+<span class="text-[10px] font-[600] text-[#C8F135] font-label-caps">12 kredi</span>
+</div>
+</div>
+<!-- TODAY'S HIGHLIGHT CARD -->
+<div class="bg-[#141414] border border-[#C8F135]/20 rounded-[16px] p-inline-padding flex flex-col gap-4 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-[#C8F135]/5 to-transparent pointer-events-none"></div>
+<div class="flex flex-col gap-1 relative z-10">
+<span class="font-label-caps text-label-caps text-[#888888] tracking-widest uppercase">BUGÜN</span>
+<h3 class="font-h3 text-h3 text-white">10:30'da Mat Yoga</h3>
+<p class="font-body-md text-[14px] text-[#A0A0A0]">Zen Studio Kadıköy · 2 saat kaldı</p>
+</div>
+<div class="flex justify-between items-center mt-2 relative z-10 border-t border-white/5 pt-4">
+<div class="flex items-center gap-2 text-[#C8F135]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-button-text text-[14px]">1s 58d</span>
+</div>
+<button class="bg-[#C8F135] text-[#141414] font-button-text text-[14px] px-4 py-2 rounded-full flex items-center gap-1 hover:opacity-90 active:scale-95 transition-all">
+                    QR Kodunu Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CREDIT + STREAK ROW -->
+<div class="flex gap-4">
+<!-- Credit Card -->
+<div class="flex-1 bg-[#141414] border border-white/5 rounded-xl p-inline-padding flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-[#888888]">KREDİ</span>
+<div class="font-h2 text-h2 text-[#C8F135] mt-1">12</div>
+</div>
+<div class="mt-4">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-[10px] text-[#888888]">31 gün kaldı</span>
+</div>
+<div class="w-full h-[3px] bg-[#1C1C1C] rounded-full overflow-hidden">
+<div class="h-full bg-[#C8F135] w-[60%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Streak Card -->
+<div class="flex-1 bg-[#141414] border border-white/5 rounded-xl p-inline-padding flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-[#888888]">SERİ</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-h3 text-h3 text-white">4 hafta</span>
+<span class="text-lg">🔥</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-4 w-full gap-1">
+<div class="w-2 h-2 rounded-full bg-[#C8F135]"></div>
+<div class="w-2 h-2 rounded-full bg-[#C8F135]"></div>
+<div class="w-2 h-2 rounded-full bg-[#C8F135]"></div>
+<div class="w-2 h-2 rounded-full bg-[#C8F135]"></div>
+<div class="w-2 h-2 rounded-full bg-[#1C1C1C]"></div>
+<div class="w-2 h-2 rounded-full bg-[#1C1C1C]"></div>
+<div class="w-2 h-2 rounded-full bg-[#1C1C1C]"></div>
+</div>
+</div>
+</div>
+<!-- AI SUGGESTION BANNER -->
+<div class="bg-[#141414] border border-[#C8F135]/30 rounded-lg p-3 flex gap-3 items-start">
+<span class="material-symbols-outlined text-[#C8F135]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<p class="font-body-md text-[13px] text-[#C5C5C5] leading-snug">
+<strong class="text-[#C8F135] font-button-text">SANA ÖZEL:</strong> Pilates'e uzun süredir gitmedin. Yarın 14:00 Moda'da yer var.
+            </p>
+</div>
+<!-- SECTION: BUGÜN YAKININDAKİ SLOTLAR -->
+<div class="flex flex-col gap-3 mt-4">
+<div class="flex justify-between items-end">
+<h2 class="font-h3 text-[18px] text-white">BUGÜN YAKININDAKİ SLOTLAR</h2>
+<a class="font-body-md text-[12px] text-[#888888] flex items-center gap-1 hover:text-white" href="/discover/">Tümü <span class="material-symbols-outlined text-[14px]">chevron_right</span></a>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2 -mx-5 px-5">
+<!-- Compact Card 1 -->
+<div class="min-w-[140px] w-[140px] bg-[#141414] border border-white/5 rounded-lg overflow-hidden flex flex-col group cursor-pointer hover:border-white/10 transition-colors">
+<div class="h-24 bg-[#1C1C1C] relative">
+<img alt="Cardio equipment in a dimly lit high-end gym with neon lime accents" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Cardio equipment in a dimly lit high-end gym with neon lime accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoDnwNMtwoxuJwTo8KpxGrLxqHgwt7Drrize5XpUBvySV6Kg4QIyKIPagZfBWRfr03KJBf90kVzQMKnOLEukWbmzGVoi8G7w9vP96kyuwLcC0BXKB-mKCgNDThrI5ayAz7hRvPXcc3xySbY7sRlEQVzyo30EHSXZvsZi_5uraPxApt1z8uVfF4MOwjaUvdejwBRf_VosTyTwAZrm1WuphIAq3y8rfngNFB6pIEi67OADz-xwavORJpwZ7iQbQNTV2odg4A3SK5dAI"/>
+<div class="absolute top-2 left-2 bg-[#1C1C1C] px-2 py-0.5 rounded text-[10px] font-label-caps text-[#C8F135] uppercase">Crossfit</div>
+</div>
+<div class="p-3 flex flex-col gap-1">
+<span class="font-button-text text-[13px] text-white truncate">Grit Garage</span>
+<div class="flex items-center gap-1 text-[#888888] text-[11px] font-body-md">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 18:00
+                        </div>
+<div class="mt-2 font-button-text text-[12px] text-[#C8F135] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">toll</span> 4 Kredi
+                        </div>
+</div>
+</div>
+<!-- Compact Card 2 -->
+<div class="min-w-[140px] w-[140px] bg-[#141414] border border-white/5 rounded-lg overflow-hidden flex flex-col group cursor-pointer hover:border-white/10 transition-colors">
+<div class="h-24 bg-[#1C1C1C] relative">
+<img alt="Yoga mats perfectly aligned on a hardwood floor in a dark studio with minimal spotlighting" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Yoga mats perfectly aligned on a hardwood floor in a dark studio with minimal spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHi2IIjVcv5uyEiUmx55Pe22E9jlKbhX7wLkmcY2gnd2sF_Irxyxx3bjfCcK-JbCv57kZ3su-E8mFUceRGQlQkymDUaN0lp7NalyOOV_8Z8KlCnUf2TFy5SoOhFrERAIGet7P6Ta29AGcI9XdAj6IoEDq3y99xoRUotJDllr1xMJW7ptOpwMHcMVnyY25S2NHh2nJUq6CNtLnaWNcGpBXpLerQGz6mOpfXgCXTM7j2IRDD40-xI-hAIf_Fm16Bm4rY7LEkFUOwq4A"/>
+<div class="absolute top-2 left-2 bg-[#1C1C1C] px-2 py-0.5 rounded text-[10px] font-label-caps text-[#C8F135] uppercase">Yoga</div>
+</div>
+<div class="p-3 flex flex-col gap-1">
+<span class="font-button-text text-[13px] text-white truncate">Flow Studio</span>
+<div class="flex items-center gap-1 text-[#888888] text-[11px] font-body-md">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 19:30
+                        </div>
+<div class="mt-2 font-button-text text-[12px] text-[#C8F135] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">toll</span> 3 Kredi
+                        </div>
+</div>
+</div>
+<!-- Compact Card 3 -->
+<div class="min-w-[140px] w-[140px] bg-[#141414] border border-white/5 rounded-lg overflow-hidden flex flex-col group cursor-pointer hover:border-white/10 transition-colors">
+<div class="h-24 bg-[#1C1C1C] relative">
+<img alt="Close up of a stationary bike wheel spinning in a dark spin class room" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Close up of a stationary bike wheel spinning in a dark spin class room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXEVVnEWCy0s5FuwIATR1nHSH3-66rBx3UrempVLLfaL5zMkS__gN9U0byDteZO_mKvDZ_A4j_iEKq_IwQNoV3evlN11O3uc9rsYFgpT7oXa1L1ft4GyHDgxEwCBRrEv6Cd768x5FWzeEEOaAYl6l5pdk2ROMQ_FZEZ6czPJvf7BpVpsQljlXMjMnhLP7NW-Gjt7Shwn2od3pi9KHEq4tSuU9Q_TjkhBvbm-OdJke8Zd62beKFPaEq7NtSL9oE4rwvVfmY5Cs2WiQ"/>
+<div class="absolute top-2 left-2 bg-[#1C1C1C] px-2 py-0.5 rounded text-[10px] font-label-caps text-[#C8F135] uppercase">Spinning</div>
+</div>
+<div class="p-3 flex flex-col gap-1">
+<span class="font-button-text text-[13px] text-white truncate">Ride Club</span>
+<div class="flex items-center gap-1 text-[#888888] text-[11px] font-body-md">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 20:00
+                        </div>
+<div class="mt-2 font-button-text text-[12px] text-[#C8F135] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">toll</span> 4 Kredi
+                        </div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION: GEÇEN HAFTA -->
+<div class="flex flex-col gap-3 mt-4 mb-8">
+<h2 class="font-h3 text-[18px] text-white">GEÇEN HAFTA</h2>
+<div class="bg-[#141414] border border-white/5 rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-h3 text-[24px] text-white">6</span>
+<span class="font-body-md text-[13px] text-[#888888]">aktivite tamamlandı</span>
+</div>
+<!-- Mini Bar Chart -->
+<div class="flex items-end gap-2 h-12">
+<div class="w-3 bg-[#1C1C1C] rounded-t-sm h-[40%] relative group"></div>
+<div class="w-3 bg-[#C8F135] rounded-t-sm h-[80%] relative group"></div>
+<div class="w-3 bg-[#C8F135] rounded-t-sm h-[100%] relative group"></div>
+<div class="w-3 bg-[#1C1C1C] rounded-t-sm h-[20%] relative group"></div>
+<div class="w-3 bg-[#C8F135] rounded-t-sm h-[60%] relative group"></div>
+<div class="w-3 bg-[#1C1C1C] rounded-t-sm h-[30%] relative group"></div>
+<div class="w-3 bg-[#C8F135] rounded-t-sm h-[90%] relative group"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-neutral-950 h-20 border-t border-white/5">
+<!-- Tab: ANA SAYFA (Active) -->
+<a class="flex flex-col items-center justify-center text-[#C8F135] border-t-2 border-[#C8F135] pt-2 pb-safe w-full active:scale-90 transition-transform" href="/home/">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-epilogue text-[10px] font-bold tracking-tighter">ANA SAYFA</span>
+</a>
+<!-- Tab: KEŞFET -->
+<a class="flex flex-col items-center justify-center text-[#444444] hover:text-white transition-colors pt-2 pb-safe w-full active:scale-90 transition-transform" href="/discover/">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-epilogue text-[10px] font-bold tracking-tighter">KEŞFET</span>
+</a>
+<!-- Tab: ANTRENMAN -->
+<a class="flex flex-col items-center justify-center text-[#444444] hover:text-white transition-colors pt-2 pb-safe w-full active:scale-90 transition-transform" href="/training/">
+<span class="material-symbols-outlined mb-1">fitness_center</span>
+<span class="font-epilogue text-[10px] font-bold tracking-tighter">ANTRENMAN</span>
+</a>
+<!-- Tab: FAVORİLER -->
+<a class="flex flex-col items-center justify-center text-[#444444] hover:text-white transition-colors pt-2 pb-safe w-full active:scale-90 transition-transform" href="/favorites/">
+<span class="material-symbols-outlined mb-1">favorite</span>
+<span class="font-epilogue text-[10px] font-bold tracking-tighter">FAVORİLER</span>
+</a>
+<!-- Tab: PROFİL -->
+<a class="flex flex-col items-center justify-center text-[#444444] hover:text-white transition-colors pt-2 pb-safe w-full active:scale-90 transition-transform" href="/profile/">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-epilogue text-[10px] font-bold tracking-tighter">PROFİL</span>
+</a>
+</nav>
+<script defer src="/assets/demo.js"></script>
+</body></html>

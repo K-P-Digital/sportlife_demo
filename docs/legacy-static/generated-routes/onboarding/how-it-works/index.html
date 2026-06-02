@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Onboarding 3/4</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#e0d2ff",
+                    "surface-container-highest": "#36343a",
+                    "outline-variant": "#494551",
+                    "on-tertiary": "#3e2e00",
+                    "on-primary": "#381e72",
+                    "on-primary-fixed-variant": "#4f378a",
+                    "surface": "#141218",
+                    "on-secondary-container": "#bfb2da",
+                    "surface-container": "#211f24",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#4b4263",
+                    "error": "#ffb4ab",
+                    "surface-container-lowest": "#0f0d13",
+                    "surface-variant": "#36343a",
+                    "primary-container": "#6750a4",
+                    "tertiary-container": "#c9a74d",
+                    "on-tertiary-container": "#503d00",
+                    "inverse-on-surface": "#322f35",
+                    "on-surface-variant": "#cbc4d2",
+                    "background": "#141218",
+                    "primary-fixed-dim": "#cfbcff",
+                    "surface-container-low": "#1d1b20",
+                    "inverse-surface": "#e6e0e9",
+                    "outline": "#948e9c",
+                    "on-surface": "#e6e0e9",
+                    "on-secondary-fixed": "#1f1635",
+                    "on-background": "#e6e0e9",
+                    "tertiary-fixed-dim": "#e7c365",
+                    "secondary-fixed-dim": "#cdc0e9",
+                    "on-tertiary-fixed-variant": "#594400",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-bright": "#3b383e",
+                    "surface-tint": "#cfbcff",
+                    "surface-dim": "#141218",
+                    "secondary-container": "#4d4465",
+                    "primary": "#cfbcff",
+                    "inverse-primary": "#6750a4",
+                    "secondary-fixed": "#e9ddff",
+                    "tertiary-fixed": "#ffdf93",
+                    "tertiary": "#e7c365",
+                    "secondary": "#cdc0e9",
+                    "surface-container-high": "#2b292f",
+                    "on-secondary": "#342b4b",
+                    "on-primary-fixed": "#22005d",
+                    "primary-fixed": "#e9ddff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "display": ["Public Sans"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #050505; color: #F5F5F5; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center bg-[#050505]">
+<!-- Mobile Canvas 390x844 -->
+<main class="w-full max-w-[390px] min-h-screen bg-[#050505] relative flex flex-col overflow-hidden mx-auto">
+<!-- Header / Progress Area -->
+<header class="pt-14 px-6 pb-4 flex flex-col gap-6 shrink-0 z-10">
+<div class="flex justify-between items-center w-full">
+<button aria-label="Geri" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#161616] border border-[#262626] cursor-pointer hover:bg-[#262626] transition-colors" type="button">
+<span class="material-symbols-outlined text-[#F5F5F5] text-sm" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="text-[10px] font-bold tracking-widest text-[#A1A1A1] uppercase">Adım 3/4</div>
+<a class="w-8 h-8 flex items-center justify-center text-[10px] font-bold text-[#A1A1A1] uppercase cursor-pointer hover:text-[#F5F5F5] transition-colors" href="/auth/">Geç</a>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-1 bg-[#161616] rounded-full overflow-hidden">
+<div class="h-full bg-[#D4FF4F] w-[75%] rounded-full shadow-[0_0_10px_rgba(212,255,79,0.3)]"></div>
+</div>
+</header>
+<!-- Visual Zone - Step Flow -->
+<div class="flex-1 px-6 flex flex-col justify-center gap-10 z-10 relative">
+<!-- Content Zone -->
+<div class="flex flex-col gap-3">
+<div class="text-[#D4FF4F] text-[10px] font-black tracking-[0.2em] uppercase">SÜREÇ</div>
+<h1 class="text-[32px] font-[800] leading-tight text-[#F5F5F5] tracking-tight">3 tıkta spor yap.</h1>
+<p class="text-[15px] font-[400] text-[#A1A1A1] leading-relaxed mt-2">Kredilerini kullanarak istediğin stüdyodan yerini ayırt. Antrenman sonrası stüdyoyu değerlendirerek topluluğa yön ver.</p>
+</div>
+<!-- Steps -->
+<div class="bg-[#0F0F0F] rounded-[24px] p-6 border border-[#262626] relative flex flex-col gap-8 shadow-xl">
+<!-- Vertical Line Behind -->
+<div class="absolute left-[41px] top-10 bottom-10 w-[2px] bg-[#262626] z-0"></div>
+<!-- Active Line Part -->
+<div class="absolute left-[41px] top-10 h-[calc(50%)] w-[2px] bg-[#D4FF4F] shadow-[0_0_8px_rgba(212,255,79,0.5)] z-0"></div>
+<!-- Step 1 (Completed) -->
+<div class="flex items-center gap-5 relative z-10">
+<div class="w-[34px] h-[34px] rounded-full bg-[#D4FF4F] border-2 border-[#0F0F0F] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#050505] text-[16px]" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="text-[16px] font-bold text-[#F5F5F5] opacity-60">Üye Ol</div>
+</div>
+<!-- Step 2 (Completed) -->
+<div class="flex items-center gap-5 relative z-10">
+<div class="w-[34px] h-[34px] rounded-full bg-[#D4FF4F] border-2 border-[#0F0F0F] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#050505] text-[16px]" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="text-[16px] font-bold text-[#F5F5F5] opacity-60">Keşfet</div>
+</div>
+<!-- Step 3 (Current) -->
+<div class="flex items-center gap-5 relative z-10">
+<div class="w-[34px] h-[34px] rounded-full bg-[#161616] border-2 border-[#D4FF4F] flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(212,255,79,0.3)]">
+<span class="text-[#D4FF4F] text-[14px] font-black">3</span>
+</div>
+<div class="flex flex-col">
+<div class="text-[18px] font-bold text-[#F5F5F5]">Rezerve Et</div>
+<div class="text-[12px] text-[#A1A1A1] mt-0.5">Kredini harca, yerini al.</div>
+</div>
+</div>
+<!-- Step 4 (Upcoming) -->
+<div class="flex items-center gap-5 relative z-10">
+<div class="w-[34px] h-[34px] rounded-full bg-[#050505] border-2 border-[#383838] flex items-center justify-center shrink-0">
+<span class="text-[#A1A1A1] text-[14px] font-bold">4</span>
+</div>
+<div class="text-[16px] font-bold text-[#A1A1A1] opacity-40">Spor Yap</div>
+</div>
+</div>
+</div>
+<!-- Background Gradient Effect -->
+<div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent pointer-events-none z-0"></div>
+<!-- Footer / CTA Area -->
+<footer class="px-6 pb-safe pt-4 pb-10 shrink-0 z-20 relative">
+<button class="w-full h-[54px] bg-[#D4FF4F] text-[#050505] rounded-[28px] font-semibold text-[16px] flex items-center justify-center gap-2 hover:bg-[#c3fc29] transition-all active:scale-[0.98]">
+<span>Rakamları Gör</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</footer>
+</main>
+<script defer src="/assets/demo.js"></script>
+</body></html>

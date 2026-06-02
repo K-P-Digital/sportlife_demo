@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Onboarding 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#e0d2ff",
+                        "surface-container-highest": "#36343a",
+                        "outline-variant": "#494551",
+                        "on-tertiary": "#3e2e00",
+                        "on-primary": "#381e72",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "surface": "#141218",
+                        "on-secondary-container": "#bfb2da",
+                        "surface-container": "#211f24",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0f0d13",
+                        "surface-variant": "#36343a",
+                        "primary-container": "#6750a4",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary-container": "#503d00",
+                        "inverse-on-surface": "#322f35",
+                        "on-surface-variant": "#cbc4d2",
+                        "background": "#141218",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-container-low": "#1d1b20",
+                        "inverse-surface": "#e6e0e9",
+                        "outline": "#948e9c",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary-fixed": "#1f1635",
+                        "on-background": "#e6e0e9",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-bright": "#3b383e",
+                        "surface-tint": "#cfbcff",
+                        "surface-dim": "#141218",
+                        "secondary-container": "#4d4465",
+                        "primary": "#cfbcff",
+                        "inverse-primary": "#6750a4",
+                        "secondary-fixed": "#e9ddff",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary": "#e7c365",
+                        "secondary": "#cdc0e9",
+                        "surface-container-high": "#2b292f",
+                        "on-secondary": "#342b4b",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed": "#e9ddff",
+                        
+                        // Brand specific custom colors to match requested style, mapping them to the closest theme colors where possible but keeping requested overrides for this specific brand requirement.
+                        "brand-lime": "#D4FF4F",
+                        "brand-black": "#050505",
+                        "brand-dark": "#0F0F0F",
+                        "brand-gray-dark": "#161616",
+                        "brand-gray-border": "#262626",
+                        "brand-gray-strong": "#383838",
+                        "brand-gray-light": "#B8B8B8",
+                        "brand-white": "#F5F5F5"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="/assets/demo.css" rel="stylesheet"/>
+</head>
+<body class="bg-brand-black text-brand-white min-h-screen flex flex-col max-w-[390px] mx-auto relative overflow-hidden">
+<!-- Progress Bar -->
+<div class="absolute top-0 left-0 w-full h-1 bg-brand-gray-strong z-50">
+<div class="h-full bg-brand-lime w-2/4"></div>
+</div>
+<!-- Header Actions (Back/Skip) -->
+<div class="flex justify-between items-center px-4 pt-6 z-40">
+<button class="w-10 h-10 rounded-full bg-brand-dark border border-brand-gray-border flex items-center justify-center text-brand-white hover:bg-brand-gray-dark transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<a class="text-sm font-medium text-brand-gray-light hover:text-brand-white transition-colors tracking-wide" href="/auth/">
+            ATLA
+        </a>
+</div>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col justify-between px-4 pb-8 pt-4 z-10">
+<!-- Visual Zone -->
+<div class="flex-1 flex items-center justify-center relative w-full mt-4 bg-brand-dark rounded-3xl border border-brand-gray-border overflow-hidden">
+<!-- Background glow/decorations could go here -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black/50 pointer-events-none"></div>
+<!-- Central Element: Credit Card Mockup -->
+<div class="relative z-10 w-[240px] h-[148px] bg-brand-gray-dark rounded-2xl border border-brand-lime flex flex-col items-center justify-center shadow-[0_0_30px_rgba(212,255,79,0.15)] overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-lime/10 to-transparent pointer-events-none"></div>
+<div class="flex items-baseline gap-1 z-10">
+<span class="text-5xl font-black text-brand-lime tracking-tighter">20</span>
+</div>
+<span class="text-sm font-semibold text-brand-white tracking-widest uppercase mt-1 z-10">kredi</span>
+<!-- Card subtle details -->
+<div class="absolute top-4 right-4 flex gap-1 z-10">
+<div class="w-2 h-2 rounded-full bg-brand-lime/50"></div>
+<div class="w-2 h-2 rounded-full bg-brand-lime/50"></div>
+</div>
+<div class="absolute bottom-4 left-4 z-10">
+<div class="h-1 w-8 bg-brand-gray-strong rounded-full"></div>
+</div>
+</div>
+<!-- Orbital Icons -->
+<!-- Top Left -->
+<div class="absolute top-1/4 left-[10%] w-12 h-12 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg">
+<span class="material-symbols-outlined text-[20px]" data-icon="fitness_center">fitness_center</span>
+</div>
+<!-- Top Right -->
+<div class="absolute top-1/4 right-[10%] w-10 h-10 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg">
+<span class="material-symbols-outlined text-[18px]" data-icon="pool">pool</span>
+</div>
+<!-- Left -->
+<div class="absolute top-1/2 -left-2 w-10 h-10 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg -translate-y-1/2">
+<span class="material-symbols-outlined text-[18px]" data-icon="sports_tennis">sports_tennis</span>
+</div>
+<!-- Right -->
+<div class="absolute top-1/2 -right-2 w-12 h-12 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg -translate-y-1/2">
+<span class="material-symbols-outlined text-[20px]" data-icon="self_improvement">self_improvement</span>
+</div>
+<!-- Bottom Left -->
+<div class="absolute bottom-1/4 left-[15%] w-10 h-10 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg">
+<span class="material-symbols-outlined text-[18px]" data-icon="sports_martial_arts">sports_martial_arts</span>
+</div>
+<!-- Bottom Right -->
+<div class="absolute bottom-1/4 right-[15%] w-10 h-10 rounded-full bg-brand-black border border-brand-gray-border flex items-center justify-center text-brand-white shadow-lg">
+<span class="material-symbols-outlined text-[18px]" data-icon="directions_bike">directions_bike</span>
+</div>
+<!-- Subtle connecting lines (decorative SVG background) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" fill="none" viewbox="0 0 390 400" xmlns="http://www.w3.org/2000/svg">
+<circle cx="195" cy="200" r="120" stroke="#F5F5F5" stroke-dasharray="4 4" stroke-width="1"></circle>
+<circle cx="195" cy="200" r="160" stroke="#F5F5F5" stroke-dasharray="2 6" stroke-width="1"></circle>
+</svg>
+</div>
+<!-- Content Zone -->
+<div class="mt-8 flex flex-col gap-3">
+<div class="inline-flex items-center gap-2">
+<span class="text-[10px] font-bold text-brand-lime uppercase tracking-widest bg-brand-lime/10 px-2 py-1 rounded">ÇÖZÜM</span>
+</div>
+<h1 class="text-[32px] font-[800] text-brand-white leading-tight tracking-tight">
+                Şehrin tüm sporu. <br/>
+<span class="text-brand-lime">Tek kredi.</span>
+</h1>
+<p class="text-[15px] font-[400] text-brand-gray-light leading-relaxed mt-2">
+                Yüzlerce partner stüdyoya tek bir kredi sistemiyle eriş. Abonelik karmaşasına son, özgürlüğe merhaba.
+            </p>
+</div>
+<!-- CTA Zone -->
+<div class="mt-10 mb-2">
+<button class="w-full h-[54px] bg-brand-lime text-brand-black font-semibold rounded-[28px] flex items-center justify-center gap-2 hover:bg-brand-lime/90 transition-colors active:scale-95 duration-100">
+                Nasıl Çalışır?
+                <span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<script defer src="/assets/demo.js"></script>
+</body></html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Sign Up Step 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#e0d2ff",
+                        "surface-container-highest": "#36343a",
+                        "outline-variant": "#494551",
+                        "on-tertiary": "#3e2e00",
+                        "on-primary": "#381e72",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "surface": "#141218",
+                        "on-secondary-container": "#bfb2da",
+                        "surface-container": "#211f24",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0f0d13",
+                        "surface-variant": "#36343a",
+                        "primary-container": "#6750a4",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary-container": "#503d00",
+                        "inverse-on-surface": "#322f35",
+                        "on-surface-variant": "#cbc4d2",
+                        "background": "#141218",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-container-low": "#1d1b20",
+                        "inverse-surface": "#e6e0e9",
+                        "outline": "#948e9c",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary-fixed": "#1f1635",
+                        "on-background": "#e6e0e9",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-bright": "#3b383e",
+                        "surface-tint": "#cfbcff",
+                        "surface-dim": "#141218",
+                        "secondary-container": "#4d4465",
+                        "primary": "#cfbcff",
+                        "inverse-primary": "#6750a4",
+                        "secondary-fixed": "#e9ddff",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary": "#e7c365",
+                        "secondary": "#cdc0e9",
+                        "surface-container-high": "#2b292f",
+                        "on-secondary": "#342b4b",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed": "#e9ddff",
+                        
+                        // Brand Specific Colors
+                        "brand-bg": "#050505",
+                        "brand-surface-1": "#0F0F0F",
+                        "brand-surface-2": "#161616",
+                        "brand-border": "#262626",
+                        "brand-border-strong": "#383838",
+                        "brand-accent": "#D4FF4F",
+                        "brand-text-muted": "#A1A1A1"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"],
+                        "sans": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #050505; /* Enforce brand bg */
+            color: #FFFFFF;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+<!-- Mobile Container (390x844 approx) -->
+<main class="w-full max-w-[390px] min-h-[844px] bg-brand-bg flex flex-col relative mx-auto shadow-2xl">
+<!-- Top Chrome / Header -->
+<header class="w-full px-4 pt-12 pb-4 flex flex-col gap-4 sticky top-0 z-10 bg-brand-bg/90 backdrop-blur-md">
+<div class="flex items-center justify-between">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-brand-surface-2 border border-brand-border text-white hover:border-brand-border-strong transition-colors">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+<span class="text-brand-text-muted text-sm font-semibold tracking-widest uppercase">ADIM 2 / 5</span>
+<div class="w-10 h-10"></div> <!-- Spacer for balance -->
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-1 bg-brand-surface-2 rounded-full overflow-hidden">
+<div class="h-full bg-brand-accent w-[40%] rounded-full"></div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="flex-1 px-4 py-6 flex flex-col gap-8">
+<!-- Headline -->
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-extrabold tracking-tight text-white">Neredesin?</h1>
+<p class="text-brand-text-muted text-sm font-medium">Sana en uygun antrenmanları bulmamız için konum ve temel bilgilerine ihtiyacımız var.</p>
+</div>
+<!-- Form Fields -->
+<div class="flex flex-col gap-5">
+<!-- Doğum Tarihi -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-semibold text-brand-text-muted uppercase tracking-wider">Doğum Tarihi</label>
+<button class="w-full h-[54px] bg-brand-surface-2 rounded-xl border border-brand-border flex items-center justify-between px-4 text-white hover:border-brand-border-strong transition-colors text-left focus:outline-none focus:border-brand-border-strong">
+<span class="font-medium">Gün / Ay / Yıl</span>
+<span class="material-symbols-outlined text-brand-text-muted">calendar_today</span>
+</button>
+</div>
+<!-- Cinsiyet -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-semibold text-brand-text-muted uppercase tracking-wider">Cinsiyet</label>
+<div class="grid grid-cols-3 gap-2">
+<!-- Selected -->
+<button class="h-[54px] rounded-xl flex items-center justify-center text-sm font-bold bg-brand-accent text-[#050505] transition-colors">
+                            Kadın
+                        </button>
+<!-- Unselected -->
+<button class="h-[54px] rounded-xl flex items-center justify-center text-sm font-semibold bg-brand-surface-2 border border-brand-border text-white hover:border-brand-border-strong transition-colors">
+                            Erkek
+                        </button>
+<!-- Unselected -->
+<button class="h-[54px] rounded-xl flex items-center justify-center text-sm font-semibold bg-brand-surface-2 border border-brand-border text-white hover:border-brand-border-strong transition-colors">
+                            Diğer
+                        </button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Şehir -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-semibold text-brand-text-muted uppercase tracking-wider">Şehir</label>
+<button class="w-full h-[54px] bg-brand-surface-2 rounded-xl border border-brand-border flex items-center justify-between px-4 text-white hover:border-brand-border-strong transition-colors text-left">
+<span class="font-medium truncate">İstanbul</span>
+<span class="material-symbols-outlined text-brand-text-muted">expand_more</span>
+</button>
+</div>
+<!-- İlçe -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-semibold text-brand-text-muted uppercase tracking-wider">İlçe</label>
+<button class="w-full h-[54px] bg-brand-surface-2 rounded-xl border border-brand-border flex items-center justify-between px-4 text-white hover:border-brand-border-strong transition-colors text-left">
+<span class="font-medium truncate">Kadıköy</span>
+<span class="material-symbols-outlined text-brand-text-muted">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Location Permission Row -->
+<div class="mt-2 bg-brand-surface-2 rounded-2xl p-4 border border-brand-border flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-brand-surface-1 flex items-center justify-center text-brand-accent">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-white">Konum Servisleri</span>
+<span class="text-xs text-brand-text-muted font-medium">Yakındaki etkinlikleri gör</span>
+</div>
+</div>
+<!-- Toggle Switch (ON State) -->
+<button class="w-12 h-6 bg-brand-accent rounded-full relative flex items-center px-1 focus:outline-none">
+<div class="w-4 h-4 bg-[#050505] rounded-full absolute right-1 shadow-sm transform transition-transform"></div>
+</button>
+</div>
+</div>
+<!-- Sticky Bottom CTA -->
+<div class="w-full p-4 pb-8 bg-brand-bg/90 backdrop-blur-xl border-t border-brand-border sticky bottom-0 z-20">
+<button class="w-full h-[54px] rounded-[28px] bg-brand-accent text-[#050505] font-semibold text-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                Devam Et
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sportlife - Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#e0d2ff",
+                        "surface-container-highest": "#36343a",
+                        "outline-variant": "#494551",
+                        "on-tertiary": "#3e2e00",
+                        "on-primary": "#381e72",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "surface": "#141218",
+                        "on-secondary-container": "#bfb2da",
+                        "surface-container": "#211f24",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0f0d13",
+                        "surface-variant": "#36343a",
+                        "primary-container": "#6750a4",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary-container": "#503d00",
+                        "inverse-on-surface": "#322f35",
+                        "on-surface-variant": "#cbc4d2",
+                        "background": "#141218",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-container-low": "#1d1b20",
+                        "inverse-surface": "#e6e0e9",
+                        "outline": "#948e9c",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary-fixed": "#1f1635",
+                        "on-background": "#e6e0e9",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-bright": "#3b383e",
+                        "surface-tint": "#cfbcff",
+                        "surface-dim": "#141218",
+                        "secondary-container": "#4d4465",
+                        "primary": "#cfbcff",
+                        "inverse-primary": "#6750a4",
+                        "secondary-fixed": "#e9ddff",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary": "#e7c365",
+                        "secondary": "#cdc0e9",
+                        "surface-container-high": "#2b292f",
+                        "on-secondary": "#342b4b",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed": "#e9ddff"
+                    },
+                    fontFamily: {
+                        headline: ["Public Sans", "sans-serif"],
+                        display: ["Public Sans", "sans-serif"],
+                        body: ["Public Sans", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #050505; color: #FFFFFF; font-family: 'Public Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col justify-center px-4 max-w-md mx-auto">
+<!-- Brand Zone -->
+<div class="flex flex-col items-center mb-8 pt-8">
+<h1 class="text-[#D4FF4F] font-black italic text-2xl tracking-widest uppercase">SPORTLIFE</h1>
+<div class="h-1 w-12 bg-[#D4FF4F] mt-2 rounded-full"></div>
+</div>
+<!-- Headline -->
+<div class="mb-10 text-center">
+<h2 class="text-[36px] font-[800] leading-tight text-white tracking-tight">Tekrar hoşgeldin.</h2>
+</div>
+<!-- Form -->
+<form class="space-y-6 flex-grow flex flex-col">
+<div class="space-y-4">
+<div>
+<label class="sr-only" for="email">E-posta</label>
+<div class="relative bg-[#161616] rounded-xl h-[54px] flex items-center px-4 border border-transparent focus-within:border-[#383838] transition-colors">
+<input class="w-full bg-transparent border-none text-white focus:ring-0 p-0 text-[16px]" id="email" name="email" placeholder="E-posta" type="email" value="ayse@email.com"/>
+</div>
+</div>
+<div>
+<label class="sr-only" for="password">Şifre</label>
+<div class="relative bg-[#161616] rounded-xl h-[54px] flex items-center px-4 border border-transparent focus-within:border-[#383838] transition-colors">
+<input class="w-full bg-transparent border-none text-white focus:ring-0 p-0 text-[16px] placeholder-[#A1A1A1]" id="password" name="password" placeholder="Şifre" type="password"/>
+<button class="text-[#A1A1A1] hover:text-white transition-colors" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">visibility_off</span>
+</button>
+</div>
+</div>
+<div class="flex justify-end">
+<a class="text-[#D4FF4F] text-sm font-medium hover:opacity-80 transition-opacity" href="#">Şifreni mi unuttun?</a>
+</div>
+</div>
+<div class="mt-8 space-y-4">
+<!-- Primary CTA -->
+<button class="w-full h-[54px] bg-[#D4FF4F] text-[#050505] rounded-[28px] font-semibold text-[16px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" type="submit">
+<span>Giriş Yap</span>
+<span class="material-symbols-outlined font-bold text-[20px]" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+<!-- Biometric Option -->
+<button class="w-full h-[54px] bg-[#161616] border border-[#262626] rounded-xl flex items-center justify-center gap-3 text-white hover:bg-[#262626] transition-colors" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">face</span>
+<span class="font-medium text-[16px]">Face ID ile Giriş</span>
+</button>
+</div>
+</form>
+<!-- Divider & Social -->
+<div class="mt-10 mb-8 space-y-6">
+<div class="flex items-center gap-4">
+<div class="h-px bg-[#262626] flex-1"></div>
+<span class="text-[#A1A1A1] text-sm">Veya</span>
+<div class="h-px bg-[#262626] flex-1"></div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 h-[54px] bg-[#161616] border border-[#262626] rounded-xl flex items-center justify-center hover:bg-[#262626] transition-colors">
+<img alt="Google" class="w-6 h-6" data-alt="Google logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk7sRePg4sK9d8F-tn2uiiixIa3VcTHPiFfQsIfPDRAFKddgbmaLjv_XF7zl5O6WEcmXpLDaBy8HM4VedD2XZgEXCTuyfdILQiMjMBkmuRHCXWgxLZLxNjY35hWFvTLD6IkzPTSOx8d9hCn6DAJUEldysTxIODpuOT86mvdWHw_jzTMdv22gml11ZsOoHfIZziHE3j-CAK7pTtAzLhmbaNOFkYQ64tuJgSBZzj1FxmE9tfZofVoyuqKWSiV_WKxBU6b7MZ9tTeVwyG"/>
+</button>
+<button class="flex-1 h-[54px] bg-[#161616] border border-[#262626] rounded-xl flex items-center justify-center hover:bg-[#262626] transition-colors">
+<img alt="Apple" class="w-6 h-6 invert" data-alt="Apple logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMRQY7DkqXRw9Gh2iTjEFoWT-u_DMoVga32bGVjk5TIt8HvlS1VstEZ-8y4UtEkJC2ArTbnuiqA9qL52fnMrv5NjfmgFgx-mQIEWF2vyVBXibHYXZPpooZZrIz-aR4IVuDF9B_R9N_ymUYMuNgovLi4d8LHrvmyrJINOhulQ8d3aPbd-L6UJjHzfRZAUnzVghiRg-nFekSjtZu0TVlxg9y34XeuoeUfXLtPVOAFWjrTFOzFh_epy8JJcP597J3rLTsQQwqS0MFDl5F"/>
+</button>
+</div>
+</div>
+<!-- Bottom Link -->
+<div class="text-center pb-8 pt-4">
+<span class="text-[#A1A1A1]">Hesabın yok mu? </span>
+<a class="text-[#D4FF4F] font-semibold hover:opacity-80 transition-opacity" href="#">Kayıt ol</a>
+</div>
+</body></html>

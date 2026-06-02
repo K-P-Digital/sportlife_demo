@@ -1,0 +1,93 @@
+:root {
+  color-scheme: dark;
+  background: #050505;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: #050505;
+}
+
+.demo-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 104px;
+  z-index: 9999;
+  max-width: min(340px, calc(100vw - 32px));
+  transform: translateX(-50%) translateY(14px);
+  opacity: 0;
+  pointer-events: none;
+  border: 1px solid rgba(212, 255, 79, 0.24);
+  border-radius: 999px;
+  background: rgba(15, 15, 15, 0.92);
+  color: #f5f5f5;
+  padding: 10px 14px;
+  font: 600 12px/1.2 "Inter", "Public Sans", system-ui, sans-serif;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.demo-toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.demo-hidden {
+  display: none !important;
+}
+
+.demo-selected-lime {
+  background: #d4ff4f !important;
+  border-color: #d4ff4f !important;
+  color: #050505 !important;
+  box-shadow: 0 0 18px rgba(212, 255, 79, 0.22);
+}
+
+.demo-selected-lime span,
+.demo-selected-lime p,
+.demo-selected-lime h3,
+.demo-selected-lime h4,
+.demo-selected-lime div {
+  color: #050505 !important;
+}
+
+.demo-selected-outline {
+  border-color: #d4ff4f !important;
+  color: #d4ff4f !important;
+  background: rgba(212, 255, 79, 0.08) !important;
+}
+
+@media (min-width: 480px) {
+  body {
+    max-width: 430px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow-x: hidden;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  }
+
+  body > .fixed,
+  body > header.fixed,
+  body > nav.fixed,
+  body > div.fixed,
+  body > main > .fixed,
+  .mobile-canvas > nav.fixed {
+    left: 50% !important;
+    right: auto !important;
+    width: 100%;
+    max-width: 430px;
+    transform: translateX(-50%);
+  }
+
+  .demo-toast {
+    max-width: 340px;
+  }
+}
