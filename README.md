@@ -76,7 +76,7 @@ make build
 - `make dev`: start the Vite dev server on port `5173`.
 - `make build`: run TypeScript and Vite production build.
 - `make preview`: serve the production build on port `4173`.
-- `make route-check`: verify all demo routes against `APP_URL`, defaulting to `http://127.0.0.1:5173`.
+- `make route-check`: verify canonical demo routes against `APP_URL`, defaulting to `http://127.0.0.1:5173`.
 - `make clean`: remove generated build/cache outputs.
 
 ## Deploy
